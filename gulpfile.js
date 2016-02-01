@@ -189,10 +189,21 @@ gulp.task('build-less', function(done){
         'html-rev',
         done);
 });
-gulp.task('watch:less',function(done){
+gulp.task('build-js', function(done){
+    runSequence(
+        'copy-js',
+        done);
+});
+gulp.task('watch:less',function(){
     gulp.run('build-less');
-    gulp.watch([dirs.src + '/less/*.less',dirs.src+'/*.html',dirs.src+'/js/*.js'],{verbose:true},function(){
+    gulp.watch([dirs.src + '/less/*.less',dirs.src+'/*.html'],{verbose:true},function(){
         gulp.run('build-less');
+    });
+});
+gulp.task('watch:js',function(){
+    gulp.run('build');
+    gulp.watch([dirs.src+'/js/*.js'],{verbose:true},function(){
+        gulp.run('build');
     });
 });
 
