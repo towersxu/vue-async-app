@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/style-8d5b8b30b0.css">
+        <link rel="stylesheet" href="css/animate-8c5831e2b9.css">
+        <link rel="stylesheet" href="css/main-b75354fc9f.css">
+        <link rel="stylesheet" href="css/home-0933038cb0.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!--<script src="js/vendor/react.js"></script>-->
+        <!--<script src="js/vendor/react-dom.js"></script>-->
+        <!--<script src="js/vendor/react-with-addons.js"></script>-->
+    </head>
+    <body ng-controller="homeCtrl" ng-click="closeModal()">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="header">
+            <div class="container">
+                <div class="logo sp i138"></div>
+                <p class="des">创作者交流社区</p>
+                <div class="user">
+                    <span class="link reg">注册</span>
+                    <span class="link log">登录</span>
+                </div>
+                <div class="search">
+                    <input class="search-box" type="text" placeholder="">
+                    <i class="search-icon sp i95"></i>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="container">
+                <div class="nav">
+                    <ul>
+                        <li>作品池</li>
+                        <li>创作者</li>
+                        <li>素材池</li>
+                        <li>剧本</li>
+                        <li>学院</li>
+                    </ul>
+                </div>
+                <div class="upload-btn" ng-click="showUpload=true;stopPropagation($event)">
+                    <i class="cloud sp i129"></i>
+                    <div class="upload animated" ng-class="{'flipInX':showUpload}">
+                        <span>上传作品</span>
+                        <div class="btn-red">上传素材</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <h1 class="title">Creative Communities of China</h1>
+            <h2 class="sub-title">自适应副标题</h2>
+            <i class="line"></i>
+            <p class="copy-right"><span class="author">UserName</span>作品</p>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="ad">
+                    <div class="item">
+                        <a href="#" target="_blank"><img src="img/A2.jpg"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank"><img src="img/A2.jpg"></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" target="_blank"><img src="img/A2.jpg"></a>
+                    </div>
+                </div>
+                <div class="area">
+                    <h3>作品推荐</h3>
+                    <div class="more"><span>更多作品</span><i class="sp i57"></i></div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A3.jpg"><div class="labels"><i class="sp i133"></i><i class="sp i134"></i></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"><i class="sp i134"></i></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="icons">
+                                    <div class="icon"><i class="inline-block sp i27"></i><span>785</span></div>
+                                    <div class="icon"><i class="inline-block sp i28"></i><span>75</span></div>
+                                    <div class="icon"><i class="inline-block sp i29"></i><span>5</span></div>
+                                    <div class="icon"><i class="inline-block sp i30"></i><span>115</span></div>
+                                </div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <h3>素材推荐</h3>
+                    <div class="more"><span>更多作品</span><i class="sp i57"></i></div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area">
+                    <h3>Gaia 学院</h3>
+                    <div class="more"><span>查看更多kan</span><i class="sp i57"></i></div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><img src="img/A4.jpg"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">素材名称显示</a>
+                                <span class="add sp i112"></span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"><img src="img/A3.jpg" width="24" height="24"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="img-wrap"><div class="labels"></div></div>
+                            <div class="item-content">
+                                <a href="play.html" class="title">作品名称显示</a>
+                                <span class="time">10:34</span>
+                                <div class="labels">商业广告|汽车|TVC|模特|源文件|高清|LogC|测试样片</div>
+                                <div class="labels labels2"><span>MOV</span><span class="split"></span><span>ProRes</span><span class="split"></span><span>1080P</span><span class="split"></span><span>25fps</span></div>
+                            </div>
+                            <div class="item-user">
+                                <div class="avatar"></div>
+                                <div class="username">UserName</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<script src="js/plugins.js"></script>-->
+        <!--<script src="js/main.js"></script>-->
+
+        <script src="js/require.js" data-main="js/index.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
