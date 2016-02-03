@@ -1,5 +1,6 @@
 .sp {
   background: url('../img/sprites.png') no-repeat;
+  vertical-align: middle;
 }
 .i2 {
   width: 8px;

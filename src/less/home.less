@@ -37,7 +37,7 @@
 .main{
     width: 100%;
     overflow: hidden;
-    background: @gary_lighter_2;
+    background: @grey_lighter_2;
     .container{
         overflow: hidden;
     }
@@ -50,7 +50,7 @@
     .item{
         width: 336px;
         height: 120px;
-        background: @gary;
+        background: @grey;
         margin-right: 6px;
         float: left;
         border-radius: 4px;
@@ -60,10 +60,19 @@
     }
 }
 .area{
-    border-top: 1px solid @gray_border;
+    border-top: 1px solid @grey_border;
     padding: 50px 0;
-    color: @font_gray;
+    color: @font_grey;
     position: relative;
+    &.pb160{
+        padding-bottom: 160px;
+    }
+    &.pb140{
+        padding-bottom: 140px;
+    }
+    .radius-img{
+        border-radius: 5px;
+    }
     h3{
         text-align: center;
         font-size: 18px;
@@ -96,8 +105,44 @@
             margin-right: 20px;
             margin-top: 35px;
             float: left;
+            &.item2{
+                width: 320px;
+                height: 430px;
+                margin-right: 30px;
+                .img-wrap{
+                    width: 320px;
+                    height: 230px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                .item-content{
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    padding: 15px 30px;
+                    height: 160px;
+                    .title2{
+                        font-size: 16px;
+                        line-height: 20px;
+                        height: 40px;
+                        overflow: hidden;
+                        display: block;
+                        color: @font_grey;
+                        text-decoration: none;
+                    }
+                    .date{
+                        font-size: 12px;
+                        color: @font_grey_1;
+                        line-height: 24px;
+                    }
+                    .icon-wrap{
+                        border-top: 1px solid @grey_border;
+                        margin-top: 10px;
+                        padding-top: 10px;
+                    }
+                }
+            }
             .img-wrap{
-                background: @gary;
+                background: @grey;
                 width: 240px;
                 height: 135px;
                 position: relative;
@@ -126,7 +171,7 @@
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
-                    color: @font_gray;
+                    color: @font_grey;
                     text-decoration: none;
                 }
                 .labels{
@@ -138,7 +183,7 @@
                     text-overflow: ellipsis;
                     &.labels2{
                         font-size: 14px;
-                        color: @font_gray_1;
+                        color: @font_grey_1;
                         line-height: 24px;
                         vertical-align: middle;
                         span{
@@ -150,7 +195,7 @@
                         width: 1px;
                         height: 12px;
                         vertical-align: middle;
-                        background: @font_gray_1;
+                        background: @font_grey_1;
                         margin: 0 5px;
                     }
                 }
@@ -159,9 +204,9 @@
                     top:10px;
                     right:5px;
                     font-size: 12px;
-                    border: 1px solid @gray_border;
+                    border: 1px solid @grey_border;
                     border-radius: 2px;
-                    color: @font_gray;
+                    color: @font_grey;
                     padding: 0 3px;
                 }
                 .add{
@@ -170,9 +215,28 @@
                     right:5px;
                     display: block;
                     cursor: pointer;
+                    .tb{
+                       width: 38px;
+                        height: 24px;
+                        text-align: center;
+                        display: inline-block;
+                        background: @red_lighter;
+                        vertical-align: middle;
+                        &:hover{
+                            background: @red;
+                        }
+                    }
+                    .favorite{
+                        border-bottom-left-radius: 3px;
+                        border-top-left-radius: 3px;
+                    }
+                    .shop-chart{
+                        border-bottom-right-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
                 }
                 .icons{
-                    color: @font_gray_1;
+                    color: @font_grey_1;
                     .icon{
                         display: inline-block;
                         margin-right: 10px;
@@ -188,7 +252,7 @@
                     float: left;
                     margin-top: 15px;
                     border-radius: 24px;
-                    background: grey;
+                    background: @grey;
                     width: 24px;
                     height: 24px;
                     img{
@@ -205,4 +269,5 @@
             }
         }
     }
+
 }

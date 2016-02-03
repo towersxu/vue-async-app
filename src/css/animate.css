@@ -19,6 +19,10 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+.animated.fadeInDown {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
 .animated.bounceIn,
 .animated.bounceOut {
   -webkit-animation-duration: .75s;
