@@ -14,7 +14,7 @@ require(['angular'], function () {
             $scope.stopPropagation = function (e) {
                 e.stopPropagation();
             };
-            $scope.closeModal = function () {
+            $scope.closePopover = function () {
                 $scope.showUpload=false;
                 $scope.showChart=false;
             };

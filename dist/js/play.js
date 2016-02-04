@@ -9,11 +9,12 @@ requirejs.config({
 });
 
 require(['angular'], function () {
-    angular.module('index-app', [])
-        .controller('homeCtrl', ['$scope', function ($scope) {
+    angular.module('app', [])
+        .controller('mainCtrl', ['$scope', function ($scope) {
             $scope.stopPropagation = function (e) {
                 e.stopPropagation();
             };
+            //点击空白处关闭popover
             $scope.closePopover = function () {
                 $scope.showUpload=false;
                 $scope.showChart=false;
@@ -49,7 +50,7 @@ require(['angular'], function () {
     );
     var $html = angular.element(document.getElementsByTagName('html')[0]);
     angular.element().ready(function () {
-        angular.bootstrap($html, ['index-app']);
+        angular.bootstrap($html, ['app']);
     });
 });
 

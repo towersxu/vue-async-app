@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "@alrra/travis-scripts": "^1.1.1",
+    "angular": "^1.4.9",
     "animate.css": "^3.4.0",
     "apache-server-configs": "2.14.0",
     "archiver": "^0.21.0",
@@ -30,9 +31,9 @@
     "purecss": "^0.6.0",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
+    "requirejs": "^2.1.22",
     "run-sequence": "^1.0.2",
-    "angular": "^1.4.9",
-    "requirejs": "^2.1.22"
+    "video.js": "^5.5.3"
   },
   "babel": {
     "presets": [
