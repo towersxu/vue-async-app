@@ -6,6 +6,7 @@
   width: 866px;
   margin: 0 auto;
   padding-top: 30px;
+  padding-bottom: 40px;
   position: relative;
 }
 .play .b-nav a {
@@ -27,7 +28,6 @@
 }
 .play .video-box {
   width: 866px;
-  height: 488px;
   border: 3px solid #d6d6d6;
   position: relative;
 }
@@ -85,6 +85,7 @@
 }
 .play .video-info .score .star {
   vertical-align: middle;
+  cursor: pointer;
 }
 .play .video-info .score .light {
   margin-left: 15px;
@@ -98,6 +99,7 @@
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
   background: #fff;
   padding: 13px 20px;
+  z-index: 1;
 }
 .play .video-info .score .score-p .score-p-p {
   font-size: 12px;
@@ -141,4 +143,393 @@
   color: #ff565c;
   cursor: pointer;
   margin-left: 20px;
+}
+.play .video-des {
+  padding: 15px 0;
+  position: relative;
+  margin-top: 20px;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+}
+.play .video-des .split {
+  width: 1px;
+  height: 12px;
+  background: #c7c7c7;
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: baseline;
+}
+.play .video-des .des {
+  font-size: 14px;
+  line-height: 22px;
+  color: #c7c7c7;
+  margin: 0;
+}
+.play .video-des .detail-btn {
+  width: 109px;
+  height: 34px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+}
+.play .video-des .detail-btn .detail-w {
+  font-size: 12px;
+  color: #999;
+  vertical-align: middle;
+  line-height: 34px;
+}
+.play .video-des .detail-btn .sp {
+  vertical-align: middle;
+}
+.play .group {
+  margin-top: 15px;
+  font-size: 12px;
+  position: relative;
+}
+.play .group .group-btn {
+  width: 40px;
+  height: 18px;
+  background: -webkit-linear-gradient(bottom, #c7c7c7, #d1d1d1);
+  background: linear-gradient(to top, #c7c7c7, #d1d1d1);
+  text-align: center;
+  color: #8c8e8e;
+  font-size: 12px;
+  line-height: 18px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.play .group .group-btn-wrap {
+  width: 60px;
+  height: 18px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.play .group .group-btn2 {
+  cursor: pointer;
+  width: 40px;
+  height: 18px;
+}
+.play .group span {
+  font-size: 12px;
+  color: #8c8e8e;
+  line-height: 18px;
+}
+.play .group .join-group {
+  position: absolute;
+  left: 46px;
+  top: -8px;
+  width: 164px;
+  height: 30px;
+  border-radius: 5px;
+}
+.play .group .join-group:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px;
+  border-left-width: 0px;
+  border-right-color: #ff565c;
+  top: 9px;
+  left: -5px;
+}
+.play .group .join-group .join-part {
+  width: 82px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  float: left;
+  cursor: pointer;
+}
+.play .group .join-group .join-left {
+  background: #ff565c;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.play .group .join-group .join-right {
+  background: #c7c7c7;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.play2 {
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.more-video {
+  background: #d1d1d1;
+  text-align: center;
+  overflow: hidden;
+}
+.more-video .more {
+  margin: 0;
+  font-size: 14px;
+  line-height: 40px;
+  color: #b2b2b2;
+  text-align: center;
+  cursor: pointer;
+}
+.more-video .more .sp {
+  margin-right: 10px;
+}
+.more-video .more.close-more {
+  color: #fff;
+}
+.more-video .labels {
+  margin-top: 60px;
+  padding: 25px 0;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  overflow: hidden;
+}
+.more-video .labels .label-name {
+  font-size: 14px;
+  color: #808080;
+  line-height: 14px;
+  float: left;
+}
+.more-video .labels .label {
+  display: inline-block;
+  padding: 1px 8px 1px 6px;
+  font-size: 12px;
+  line-height: 14px;
+  float: left;
+  color: #b2b2b2;
+  vertical-align: bottom;
+  background: #fff;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  margin-left: 20px;
+}
+.more-video .labels .label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 8px;
+  border-left-width: 0px;
+  border-right-color: #fff;
+  left: -8px;
+  top: 0;
+}
+.more-video .labels .label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #b2b2b2;
+  border-radius: 2px;
+  left: -2px;
+  top: 6px;
+}
+.more-video .more-list {
+  width: 1040px;
+  margin-top: 40px;
+  position: relative;
+  height: 310px;
+}
+.more-video .more-list .more-item {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #7f7f7f;
+}
+.more-video .more-list .more-item a {
+  display: block;
+  width: 240px;
+  height: 135px;
+}
+.more-video .more-list .bar {
+  width: 24px;
+  height: 60px;
+  background: #e5e5e5;
+  border-radius: 5px;
+  position: absolute;
+  top: 120px;
+  cursor: pointer;
+}
+.more-video .more-list .bar.left {
+  left: -54px;
+}
+.more-video .more-list .bar.right {
+  right: -30px;
+}
+.more-video .more-list .bar .sp {
+  margin-top: 20px;
+}
+.description {
+  width: 866px;
+  padding: 30px;
+  background: #fff;
+  margin: 20px auto 0 auto;
+}
+.description h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  color: #808080;
+  font-weight: normal;
+}
+.description .content {
+  border-top: 1px solid #d6d6d6;
+  padding: 20px 0 25px 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #616161;
+  text-align: justify;
+}
+.description .read-more {
+  margin: 0;
+}
+.description .read-more .open-read {
+  font-size: 14px;
+  color: #ff565c;
+  line-height: 24px;
+  cursor: pointer;
+}
+.description .read-more .words {
+  font-size: 12px;
+  color: #808080;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.description .read-more .images {
+  font-size: 12px;
+  color: #808080;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.comments {
+  width: 630px;
+  margin: 0 auto;
+}
+.comments .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ebebeb;
+  display: inline-block;
+  vertical-align: top;
+}
+.comments .avatar.avatar2 {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+.comments .comments-input {
+  position: relative;
+  overflow: hidden;
+}
+.comments .comments-input .text-area {
+  width: 560px;
+  height: 100px;
+  border: 2px solid #e0e0e0;
+  display: inline-block;
+  float: right;
+  background: #e0e0e0;
+  position: relative;
+}
+.comments .comments-input .text-area .text {
+  border: none;
+  width: 556px;
+  height: 68px;
+  background: #f0f0f0;
+  padding: 5px;
+}
+.comments .comments-input .text-area .text-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 28px;
+  width: 556px;
+}
+.comments .comments-input .text-area .text-bottom .tbs {
+  font-size: 12px;
+  line-height: 28px;
+  margin-left: 10px;
+  color: #808080;
+}
+.comments .comments-input .text-area .text-bottom .com-btn {
+  width: 80px;
+  float: right;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+.comments .comments-input .text-area .text-bottom .i78 {
+  float: right;
+  margin-top: 7px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.comments .comments-input .text-area .text-bottom .i78:hover {
+  background-position: -349px -93px;
+}
+.comments .comment-list {
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 30px;
+}
+.comments .comment-list .comment-item {
+  border-top: 1px solid #e5e5e5;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.comments .comment-list .comment-item.res {
+  padding: 0;
+  border-top: none;
+  margin-bottom: 20px;
+}
+.comments .comment-list .comment-item.res .comment {
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.comments .comment-list .comment {
+  width: 560px;
+  float: right;
+  overflow: hidden;
+}
+.comments .comment-list .comment .head {
+  margin: 0;
+}
+.comments .comment-list .comment .head .user {
+  font-size: 14px;
+  line-height: 20px;
+  color: #b2b2b2;
+}
+.comments .comment-list .comment .head .date {
+  font-size: 12px;
+  line-height: 20px;
+  color: #808080;
+  margin-left: 15px;
+}
+.comments .comment-list .comment .head .response {
+  font-size: 12px;
+  line-height: 24px;
+  color: #808080;
+  float: right;
+}
+.comments .comment-list .comment .comment-p {
+  color: #616161;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 5px 0;
 }

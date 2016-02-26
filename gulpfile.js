@@ -242,3 +242,11 @@ gulp.task('build', function (done) {
 });
 
 gulp.task('default', ['build']);
+
+
+gulp.task('doc', function (cb) {
+    var jsdoc = require('gulp-jsdoc3');
+    var config = require('./jsdoc.json');
+    gulp.src(['README.md'], {read: false})
+        .pipe(jsdoc(config, cb));
+});

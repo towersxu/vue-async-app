@@ -15,6 +15,9 @@ body{
 .show{
     display: block !important;
 }
+.show-inlineblock{
+    display: inline-block !important;
+}
 .clf{
     clear: left;
 }
@@ -24,6 +27,9 @@ body{
     .logo{
         float: left;
         margin-top: 22px;
+        a{
+            display: block;
+        }
     }
     .des{
         float: left;
@@ -93,10 +99,10 @@ body{
         li{
             float: left;
             position: relative;
-            color: @base_white;
-            line-height: 54px;
             margin-right: 40px;
             cursor: pointer;
+            color: @base_white;
+            line-height: 54px;
             &:hover:after{
                 content: "";
                 width: 100%;
@@ -106,6 +112,12 @@ body{
                 background: @base_white;
                 bottom: 8px;
                 left: 0;
+            }
+            a{
+                display: block;
+                color: @base_white;
+                line-height: 54px;
+                text-decoration: none;
             }
         }
     }
@@ -724,6 +736,7 @@ body{
         line-height: 20px;
         border-radius: 2px;
     }
+
     &.btn-blue{
         width: 160px;
         height: 36px;
@@ -757,6 +770,10 @@ i{
 }
 .container{
     width: 1020px;
+    margin: 0 auto;
+}
+.container2{
+    width: 1024px;
     margin: 0 auto;
 }
 input[type='text'],input[type='password'],input[type='email'],input[type='number']{

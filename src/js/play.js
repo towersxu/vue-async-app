@@ -18,6 +18,8 @@ require(['angular'], function () {
             $scope.closePopover = function () {
                 $scope.showUpload=false;
                 $scope.showChart=false;
+                $scope.isDoScore = false;   //关闭打分按钮
+                $scope.isJoin = false;   //关闭加入小组
             };
             //控制mask中各自modal的状态。
             $scope.closeMask = function(){
