@@ -1,0 +1,173 @@
+/*****grey******/
+.items-list {
+  width: 1200px;
+  overflow: hidden;
+}
+.items-list .item {
+  width: 240px;
+  height: 258px;
+  margin-right: 20px;
+  margin-top: 35px;
+  float: left;
+}
+.items-list .item.item2 {
+  width: 320px;
+  height: 430px;
+  margin-right: 30px;
+}
+.items-list .item.item2 .img-wrap {
+  width: 320px;
+  height: 230px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.items-list .item.item2 .item-content {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 15px 30px;
+  height: 160px;
+}
+.items-list .item.item2 .item-content .title2 {
+  font-size: 16px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
+  display: block;
+  color: #616161;
+  text-decoration: none;
+}
+.items-list .item.item2 .item-content .date {
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
+}
+.items-list .item.item2 .item-content .icon-wrap {
+  border-top: 1px solid #d6d6d6;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.items-list .item .img-wrap {
+  background: #c7c7c7;
+  width: 240px;
+  height: 135px;
+  position: relative;
+}
+.items-list .item .img-wrap .labels {
+  width: 26px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.items-list .item .img-wrap .labels .sp {
+  display: block;
+  margin-top: 2px;
+}
+.items-list .item .item-content {
+  position: relative;
+  padding: 3px;
+  background: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.items-list .item .item-content .title {
+  font-size: 14px;
+  width: 170px;
+  line-height: 36px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #616161;
+  text-decoration: none;
+}
+.items-list .item .item-content .labels {
+  width: 210px;
+  font-size: 12px;
+  line-height: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.items-list .item .item-content .labels.labels2 {
+  font-size: 14px;
+  color: #999;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.items-list .item .item-content .labels.labels2 span {
+  vertical-align: middle;
+}
+.items-list .item .item-content .labels .split {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  vertical-align: middle;
+  background: #999;
+  margin: 0 5px;
+}
+.items-list .item .item-content .time {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 2px;
+  color: #616161;
+  padding: 0 3px;
+}
+.items-list .item .item-content .add {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: block;
+  cursor: pointer;
+}
+.items-list .item .item-content .add .tb {
+  width: 38px;
+  height: 24px;
+  text-align: center;
+  display: inline-block;
+  background: #ffbdc8;
+  vertical-align: middle;
+}
+.items-list .item .item-content .add .tb:hover {
+  background: #ff565c;
+}
+.items-list .item .item-content .add .favorite {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.items-list .item .item-content .add .shop-chart {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.items-list .item .item-content .icons {
+  color: #999;
+}
+.items-list .item .item-content .icons .icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.items-list .item .item-content .icons .icon .sp,
+.items-list .item .item-content .icons .icon span {
+  vertical-align: middle;
+}
+.items-list .item .item-user .avatar {
+  float: left;
+  margin-top: 15px;
+  border-radius: 24px;
+  background: #c7c7c7;
+  width: 24px;
+  height: 24px;
+}
+.items-list .item .item-user .avatar img {
+  border-radius: 24px;
+}
+.items-list .item .item-user .username {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-top: 15px;
+  float: left;
+}

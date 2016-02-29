@@ -13,30 +13,19 @@
       </div>
       <div class="upload-detail">
         <div class="video-list">
-          <!--<p class="tips-none">- 未添加作品! -</p>-->
-          <div class="video-items">
-            <div class="video-item">
-              <img src="./B4.jpg" width="160" height="90">
-              <i class="sp inline-block i102 delete"></i>
+          <p class="tips-none" v-show="upFiles.length===0">- 未添加作品! -</p>
+          <div class="list-wrap" v-show="upFiles.length>0">
+            <div class="video-items">
+              <div class="video-item" v-for="file in upFiles">
+                <!--<img src="./B4.jpg" width="160" height="90">-->
+                <p class="name">{{file.name}}</p>
+                <p class="size">{{file.size}}</p>
+                <div class="cover-up-btn">上传封面</div>
+                <i class="sp inline-block i102 delete" v-on:click="deleteUpFile($index)"></i>
+              </div>
             </div>
-            <div class="video-item">
-              <img src="./B4.jpg" width="160" height="90">
-              <i class="sp inline-block i102 delete"></i>
-            </div>
-            <div class="video-item ">
-              <img src="./B4.jpg" width="160" height="90">
-              <i class="sp inline-block i102 delete"></i>
-            </div>
-            <div class="video-item">
-              <img src="./B4.jpg" width="160" height="90">
-              <i class="sp inline-block i102 delete"></i>
-            </div>
-            <div class="video-item">
-              <img src="./B4.jpg" width="160" height="90">
-              <i class="sp inline-block i102 delete"></i>
-            </div>
+            <p class="tips-video">5个作品,共2.7GB,请在下方设置视频信息:</p>
           </div>
-          <p class="tips-video">5个作品,共2.7GB,请在下方设置视频信息:</p>
         </div>
         <div class="public-tabs">
             <div class="tab selected">
@@ -234,6 +223,10 @@
   var editor = require('../../../components/ckeditor/ckeditor.vue');
   var select = require('../select/select.vue');
   var upload = require('../../../components/qn_upload/qnupload.vue');
+  /**
+   * module upload-get-width
+   * des 在动态添加标签时,将标签显示在输入框上,同时修改输入框的indent
+   */
   Vue.directive('upload-get-width',{
     update:function(){
       this.vm.indentLength = this.el.offsetWidth+20;
@@ -279,6 +272,18 @@
       addLabel:function(label){
         this.labels.push(label);
       },
+      /**
+       * 删除上传文件,修改上传文件序列.
+       * @param idx 序号
+       */
+      deleteUpFile:function(idx){
+        this.upFiles.splice(idx,1);
+      },
+      /**
+       * 判断新增的文件是否在上传序列中存在.
+       * @param file 文件对象
+       * @returns {boolean}
+       */
       isNewFile:function(file){
         for(var i= 0,max = this.upFiles.length;i<max;i++){
           if(this.upFiles[i].name === file.name){
@@ -286,6 +291,9 @@
           }
         }
         return true;
+      },
+      transFileSize:function(size){
+
       }
     },
     components:{
@@ -294,22 +302,24 @@
       upload:upload
     },
     events:{
+      /**
+       * 监听事件'file-add',修改上传文件序列
+       * @param files 文件数组
+       */
       'file-add':function(files){
-        console.log('get file add');
-        console.log(files);
-        //判断该文件是否已经在上传列表中
         for(var i= 0,max = files.length;i<max;i++){
-          if(this.isNewFile(files[i])){
+          if(this.isNewFile(files[i])){ //判断该文件是否已经在上传队列中
             this.upFiles.push({
               name:files[i].name,
-              id:files[i].id
+              id:files[i].id,
+              size:files[i].size
             });
           }else{
             this.$broadcast('delete file',files[i].id)
           }
         }
+        console.log(files);
         //将该文件添加到上传列表
-
       }
     }
   }

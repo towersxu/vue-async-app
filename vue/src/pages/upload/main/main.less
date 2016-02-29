@@ -42,6 +42,8 @@
       position:relative;
       border-top:1px solid @grey_border;
       border-bottom:1px solid @grey_border;
+    }
+    .list-wrap{
       padding-top: 25px;
     }
     .public-tabs{
@@ -418,11 +420,39 @@
     border:1px solid transparent;
     width: 160px;
     height: 90px;
-    cursor:pointer;
+    background: @grey_lighter_2;
+    font-size: 12px;
+    color: @font_grey;
     position:relative;
     img{
       width: 160px;
       height: 90px;
+    }
+    .name{
+      width: 120px;
+      padding-left: 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 5px;
+    }
+    .size{
+      padding-left: 10px;
+      margin: 0;
+    }
+    .cover-up-btn{
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      width: 60px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+      background: @base_white;
+      &:hover{
+        color: @red;
+      }
     }
     &:hover{
       border: 1px solid @red;
@@ -436,6 +466,7 @@
       position: absolute;
       right: 5px;
       top: 5px;
+      cursor: pointer;
       &:hover{
         background-position: -322px -267px;
       }
