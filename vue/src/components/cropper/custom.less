@@ -1,0 +1,55 @@
+@import '../../static/less/color.less';
+
+.cropper-modal-custom{
+  position: fixed;
+  width: 750px;
+  height: 520px;
+  background: @base_white;
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+  margin-left: -375px;
+  margin-top: -260px;
+  box-shadow: 2px 1px 20px 1px @opacity_mask;
+  border-radius: 6px;
+  .title{
+    font-size: 14px;
+    line-height: 35px;
+    color: @font_grey_1;
+    margin: 0;
+    border-bottom: 1px solid @red;
+  }
+  .content{
+    padding-top: 25px;
+  }
+  .img-wrap{
+    width: 400px;
+    height: 400px;
+    float: left;
+  }
+  .img-info{
+    width: 240px;
+    float: left;
+    margin-left: 20px;
+    .upload-btn{
+      width: 120px;
+      height: 28px;
+      background: @font_grey_1;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 28px;
+      cursor: pointer;
+      span{
+        line-height: 28px;
+        vertical-align: middle;
+        font-size: 12px;
+        color: @base_white;
+      }
+    }
+    .tip{
+      font-size: 12px;
+      color: @font_grey_1;
+      margin: 8px 0;
+    }
+  }
+}

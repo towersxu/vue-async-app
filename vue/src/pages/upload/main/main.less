@@ -428,21 +428,25 @@
       width: 160px;
       height: 90px;
     }
+    .des{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: none;
+    }
     .name{
       width: 120px;
-      padding-left: 10px;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin-bottom: 5px;
+      white-space: nowrap;
+      margin: 0;
     }
     .size{
-      padding-left: 10px;
       margin: 0;
     }
     .cover-up-btn{
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
+      position: relative;
+      top: 15px;
       width: 60px;
       height: 20px;
       line-height: 20px;
@@ -456,10 +460,14 @@
     }
     &:hover{
       border: 1px solid @red;
+      .des{
+        display: block;
+      }
       img{
-        margin: 1px;
-        width: 156px;
-        height: 86px;
+        display: none;
+        //margin: 1px;
+        //width: 156px;
+        //height: 86px;
       }
     }
     .delete{

@@ -64,6 +64,9 @@
     events:{
       'app-mask-show':function(msg) {
         this.$broadcast('mask_show',msg);
+      },
+      'app-crop-show':function(msg) {
+        this.$broadcast('cropper_show',msg);
       }
     }
   };

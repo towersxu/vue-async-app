@@ -20,6 +20,28 @@
         uploader:{}
       }
     },
+    events:{
+      /**
+       * 将文件移出上传序列
+       * @param fileId 文件Id
+       */
+      'delete-file':function(fileId){
+        var file = this.uploader.getFile(fileId);
+        if(file){
+          if(file.coverImageId){
+            this.uploader.removeFile(this.uploader.getFile(file.coverImageId));
+          }
+          this.uploader.removeFile(this.uploader.getFile(fileId));
+        }
+      },
+      'upload-file': function () {
+        console.log(this.uploader);
+        this.uploader.start();
+      },
+      'add-file': function(data) {
+        this.uploader.addFile(data.dom,data.id);
+      }
+    },
     ready:function(){
       var self = this;
       self.uploader = Qiniu.uploader({
@@ -27,7 +49,7 @@
         browse_button: 'qnupload-btn',
         container: 'qnupload-container',
         drop_element: 'container',
-        max_file_size: '1000mb',
+        max_file_size: '1000gb',
         flash_swf_url: './Moxie.swf',
         dragdrop: true,
         chunk_size: '4mb',
@@ -49,19 +71,25 @@
         log_level: 5,
         init: {
           'FilesAdded': function(up, files) {
-            console.log('FilesAdded ...')
-            console.log(files);
-            self.files.concat(files);
-            console.log(self.files);
-            self.$dispatch('file-add',files);
-
+            var coverAddFlag = false;
+            for(var i=0;i<files.length;i++){
+              if(/image\/\w+/.test(files[i].type)){ //如果是图片
+                var file = up.getFile(files[i].name)
+                if(file) { // ,判断该图片是否是文件的封面
+                  file.coverImageId = files[i].id;
+                  self.$dispatch('cover-add',file);
+                  coverAddFlag = true;
+                }
+              }
+            }
+            if(!coverAddFlag){
+              self.files.concat(files);
+              self.$dispatch('file-add',files);
+            }
           },
           'QueueChanged':function(upload){
             console.log('QueueChanged...');
-//            console.log(arguments);
             console.log(upload.files)
-            console.log(upload)
-            console.log(this)
           },
           'BeforeUpload': function(up, file) {
             console.log('BeforeUpload ...')
