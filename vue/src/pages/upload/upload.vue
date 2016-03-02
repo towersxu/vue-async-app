@@ -52,8 +52,6 @@
         });
       } else {
         console.log('this is upload!');
-//        this.asyncModule.msg = msg;
-//        this.asyncModule.$emit('get_init');
       }
     },
     methods:{

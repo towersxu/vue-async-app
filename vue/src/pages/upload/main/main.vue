@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="base-bg upload-panel">
-      <div class="container">
+      <div class="container hidden">
         <div class="upload-des">
           <h1>上传作品</h1>
           <span class="space">本周可用空间560.5MB</span><span class="split">|</span><span>总可用空间28.4GB</span>
@@ -247,6 +247,43 @@
           </div>
         </div>
       </div>
+      <div class="container">
+        <div class="uploading-head">
+          <h1 class="title">正在上传</h1>
+          <div class="uploading-process">
+            <span class="">合计<span class="data">5</span>个作品</span>
+            <span class="process-des">完成<span class="data">5</span>个</span>
+            <span class="process-des">剩余<span class="data">3221.0MB</span></span>
+            <span class="process-des">总进度<span class="data">10%</span></span>
+            <span class="process-des">平均速度<span class="data">534KB/s</span></span>
+            <span class="process-des">预计耗时<span class="data">45分钟23秒</span></span>
+          </div>
+          <div class="uploading-option">
+            <span class="pause">全部暂停</span>
+            <span class="cancel">全部取消</span>
+          </div>
+        </div>
+        <div class="uploading-content">
+          <div class="uploading-items">
+            <div class="item">
+              <img src="vbg.jpg">
+              <div class="process">
+                <div class="process-detail">
+                  <span class="name">名称是声明奥迪</span>
+                  <span>2.4G</span>
+                  <span>MOV</span>
+                  <span>公开</span>
+                  <span>不允许下载</span>
+                </div>
+                <div class="process-bar">
+                  <div class="process-rate" style="width: 30%"></div>
+                </div>
+                <div class="process-des"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <cropper></cropper>
   </div>
@@ -258,6 +295,7 @@
   var select = require('../select/select.vue');
   var upload = require('../../../components/qn_upload/qnupload.vue');
   var cropper = require('../../../components/cropper/cropper.vue');
+  var util = require('../../../util/util.js');
   /**
    * module upload-get-width
    * des 在动态添加标签时,将标签显示在输入框上,同时修改输入框的indent
@@ -342,10 +380,12 @@
           this.$broadcast('add-file', {dom: e.target, id: this.upFiles[idx].id});
         }
       },
+      /**
+       * 显示封面选择modal
+       * @param idx 视频序号0-4
+       */
       openCoverFile: function (idx) {
-        this.$broadcast('show_cropper',{})
-//        var e = document.getElementById('op_file_' + idx);
-//        e && e.click();
+        this.$broadcast('show_cropper',{idx:idx});
       }
     },
     components: {
@@ -378,24 +418,12 @@
        * @param file 文件
        */
       'cover-add': function (file) {
-        console.log(file);
-        console.log(file.getSource());
-        var self = this;
-        var idx = self.getFileIdx(file),
-          reader;
-        if(idx !== -1){
-          var e = document.getElementById('op_file_'+idx)
-          var f = e && e.files[0];
-          reader = new FileReader();
-          reader.readAsDataURL(f);
-          reader.onload = function(e){
-            self.upFiles[idx].coverUrl = this.result;
-            console.log(self.upFiles);
-          }
-        }
-//        image.readAsDataURL(file.getSource(),function(dataurl){
-//          console.log(dataurl);
-//        });
+      },
+      'cropper_result':function (msg) {
+        this.upFiles[msg.idx].coverUrl = msg.dataurl;
+        msg.id=this.upFiles[msg.idx].id;
+        msg.blob=util.dataURLtoBlob(msg.dataurl);
+        this.$broadcast('add-file', msg);
       }
     }
   }

@@ -499,3 +499,92 @@
 .film-types{
   margin-top: 30px;
 }
+//上传中
+.uploading-head{
+  overflow: hidden;
+  span{
+    font-size: 12px;
+    color: @font_grey_1;
+  }
+  .title{
+    font-size: 24px;
+    line-height: 30px;
+    color: @font_grey;
+    margin: 0;
+    float: left;
+  }
+  .uploading-process{
+    float: left;
+    line-height: 34px;
+    margin-left: 40px;
+    .process-des{
+      &:before{
+        content: "|";
+        display: inline-block;
+        margin: 0 6px 0 4px;
+        line-height: 32px;
+        vertical-align: top;
+      }
+    }
+    .data{
+      color: @font_blue;
+      margin: 0 3px;
+    }
+  }
+  .uploading-option{
+    float: right;
+    line-height: 34px;
+    .pause{
+      cursor: pointer;
+    }
+    .cancel{
+      cursor: pointer;
+    }
+  }
+}
+.uploading-content{
+  margin-top: 30px;
+  background: @base_white;
+  padding: 40px 60px;
+  .item{
+    padding: 20px 0;
+    border-bottom: 1px solid @grey_border_1;
+    overflow: hidden;
+    img{
+      width: 160px;
+      height: 90px;
+      float: left;
+    }
+  }
+  .process{
+    float: left;
+    height: 90px;
+    width: 730px;
+    padding: 10px 25px 10px 40px;
+    margin-left: 10px;
+    border-radius: 6px;
+    background: @white_2;
+    span{
+      font-size: 12px;
+      color: @font_grey_1;
+      margin-right: 5px;
+    }
+    .name{
+      font-size: 14px;
+      color: @font_grey;
+      margin-right: 10px;
+    }
+    .process-bar{
+      width: 600px;
+      height: 14px;
+      margin-top: 10px;
+      border-radius: 6.5px;
+      background: @grey_lighter_1;
+      .process-rate{
+        height: 14px;
+        background: @red;
+        border-radius: 6.5px;
+      }
+    }
+  }
+}

@@ -39,7 +39,8 @@
         this.uploader.start();
       },
       'add-file': function(data) {
-        this.uploader.addFile(data.dom,data.id);
+        console.log('add-file')
+        this.uploader.addFile(data.blob,data.id);
       }
     },
     ready:function(){
@@ -71,11 +72,15 @@
         log_level: 5,
         init: {
           'FilesAdded': function(up, files) {
+            console.log('FilesAdded...');
             var coverAddFlag = false;
             for(var i=0;i<files.length;i++){
               if(/image\/\w+/.test(files[i].type)){ //如果是图片
-                var file = up.getFile(files[i].name)
+                var file = up.getFile(files[i].name);
                 if(file) { // ,判断该图片是否是文件的封面
+                  if(file.coverImageId){   //如果已经存在封面
+                    this.uploader.removeFile(this.uploader.getFile(file.coverImageId));
+                  }
                   file.coverImageId = files[i].id;
                   self.$dispatch('cover-add',file);
                   coverAddFlag = true;
