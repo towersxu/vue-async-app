@@ -1,0 +1,69 @@
+@import "../../../../static/less/color.less";
+
+.c-modal-custom {
+  position: fixed;
+  width: 820px;
+  background: @base_white;
+  //padding: 20px 40px;
+  margin-left: -410px;
+  margin-top: -310px;
+  box-shadow: 2px 1px 20px 1px @opacity_mask;
+  border-radius: 8px;
+  .content{
+    padding-bottom: 40px;
+    h2{
+      font-size: 16px;
+      color: @font_grey;
+      text-align: center;
+      margin-top: 38px;
+      margin-bottom: 0;
+    }
+    p{
+      font-size: 14px;
+      color: @font_grey_2;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+.re-list{
+  width: 620px;
+  margin: 24px auto;
+  padding: 20px 0;
+  border-top: 1px solid @grey_border_1;
+  .re-li{
+    width: 620px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    background: @font_blue;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    color: @base_white;
+    span{
+      display: inline-block;
+    }
+    .name{
+      width: 370px;
+      margin-left: 10px;
+    }
+    .process{
+      width: 150px;
+      text-align: center;
+    }
+    .split{
+      width: 1px;
+      height: 31px;
+      background: @base_white;
+      vertical-align: middle;
+    }
+    .del{
+      width: 75px;
+      text-align: center;
+      cursor: pointer;
+      &:hover{
+        color: @red;
+      }
+    }
+  }
+}

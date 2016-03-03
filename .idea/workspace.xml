@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/main.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62439805">
-              <caret line="326" column="24" selection-start-line="326" selection-start-column="24" selection-end-line="326" selection-end-column="24" />
+            <state vertical-scroll-proportion="-1.7407408">
+              <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="465" selection-end-column="9" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -35,48 +35,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trans.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/src/filters/trans.js">
+      <file leaf-file-name="app.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/app.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#37#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-9.333333">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cropper.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/cropper.vue">
+      <file leaf-file-name="upload.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/upload.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.740741">
-              <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="24.25926">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/src/util/util.js">
+      <file leaf-file-name="mask.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/components/mask/mask.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#38#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="-0.6666667">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qnupload.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qnupload.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.814816">
-              <caret line="95" column="62" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.8378812">
+              <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plupload.dev.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/plupload.dev.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="948" column="4" selection-start-line="948" selection-start-column="4" selection-end-line="948" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -95,11 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/src/components/modal/user-modal.vue" />
-        <option value="$PROJECT_DIR$/vue/src/components/banner/banner.vue" />
-        <option value="$PROJECT_DIR$/vue/webpack.production.js" />
-        <option value="$PROJECT_DIR$/vue/src/pages/home/app.vue" />
-        <option value="$PROJECT_DIR$/vue/src/pages/home/banner/ad.vue" />
         <option value="$PROJECT_DIR$/vue/src/pages/home/recomment/recom.vue" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/vue/src/pages/home/material/material.vue" />
@@ -134,18 +132,23 @@
         <option value="$PROJECT_DIR$/vue/wds.js" />
         <option value="$PROJECT_DIR$/vue/src/components/mask/mask.vue" />
         <option value="$PROJECT_DIR$/vue/src/components/cropper/custom.less" />
-        <option value="$PROJECT_DIR$/vue/src/pages/upload/upload.vue" />
         <option value="$PROJECT_DIR$/vue/src/static/less/color.less" />
-        <option value="$PROJECT_DIR$/vue/src/static/less/base.less" />
         <option value="$PROJECT_DIR$/vue/src/static/less/sprite.less" />
-        <option value="$PROJECT_DIR$/vue/src/pages/upload/main/main.less" />
         <option value="$PROJECT_DIR$/vue/src/util/util.js" />
         <option value="$PROJECT_DIR$/vue/src/filters/measureTrans.js" />
         <option value="$PROJECT_DIR$/vue/src/filters/test.js" />
         <option value="$PROJECT_DIR$/vue/src/filters/trans.js" />
         <option value="$PROJECT_DIR$/vue/src/components/cropper/cropper.vue" />
-        <option value="$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/main/main.less" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/re-choose/re-choose.vue" />
+        <option value="$PROJECT_DIR$/vue/src/static/less/base.less" />
+        <option value="$PROJECT_DIR$/vue/src/components/modal/user-modal.vue" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re.less" />
+        <option value="$PROJECT_DIR$/vue/README.MD" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re-choose.vue" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/upload.vue" />
         <option value="$PROJECT_DIR$/vue/src/pages/upload/main/main.vue" />
+        <option value="$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue" />
       </list>
     </option>
   </component>
@@ -336,7 +339,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="filters" />
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qn_upload" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,18 +389,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue/src/pages/upload/main" />
       <recent name="$PROJECT_DIR$/vue/src/components/cropper" />
       <recent name="$PROJECT_DIR$/vue/static" />
-      <recent name="$PROJECT_DIR$/vue/src/pages/upload/main" />
       <recent name="$PROJECT_DIR$/vue" />
       <recent name="$PROJECT_DIR$/vue/src/components/qn_upload" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue/src/pages/upload/main" />
       <recent name="$PROJECT_DIR$/vue/static/img" />
       <recent name="$PROJECT_DIR$/vue/src/static/img" />
       <recent name="$PROJECT_DIR$/vue" />
       <recent name="$PROJECT_DIR$/vue/build/ckeditor" />
-      <recent name="$PROJECT_DIR$/vue/src/pages/home/ad" />
     </key>
   </component>
   <component name="RunManager">
@@ -505,16 +512,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/img/B6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/img/B4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/play.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42130366">
@@ -677,14 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/plupload.dev.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.358658">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/qiniu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -696,31 +685,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43462896">
           <caret line="3417" column="15" selection-start-line="3417" selection-start-column="11" selection-end-line="3417" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/app.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37278107">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#881#1325#0" expanded="false" />
+            <element signature="e#1349#1377#0" expanded="false" />
+            <element signature="e#1401#1625#0" expanded="false" />
+            <element signature="e#1649#2024#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/cropper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/mask/mask.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/header/gaia-header.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -757,73 +731,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/modal/user-modal.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026627218">
-          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/static/less/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76035506">
-          <caret line="930" column="0" selection-start-line="930" selection-start-column="0" selection-end-line="930" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/static/less/sprite.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.37037">
           <caret line="169" column="37" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/static/less/color.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.962963">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="15" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0">
-          <caret line="582" column="23" selection-start-line="582" selection-start-column="23" selection-end-line="582" selection-end-column="23" />
-          <folding>
-            <element signature="e#91#608#0" expanded="false" />
-            <element signature="e#625#1380#0" expanded="false" />
-            <element signature="e#1396#6717#0" expanded="false" />
-            <element signature="e#1537#2669#0" expanded="false" />
-            <element signature="e#3288#3381#0" expanded="false" />
-            <element signature="e#6730#6991#0" expanded="false" />
-            <element signature="e#6998#7760#0" expanded="false" />
-            <element signature="e#7198#7295#0" expanded="false" />
-            <element signature="e#7305#7429#0" expanded="false" />
-            <element signature="e#7438#7682#0" expanded="false" />
-            <element signature="e#7783#7840#0" expanded="false" />
-            <element signature="e#7852#8152#0" expanded="false" />
-            <element signature="e#8166#9437#0" expanded="false" />
-            <element signature="e#9448#9558#0" expanded="false" />
-            <element signature="e#9570#9676#0" expanded="false" />
-            <element signature="e#9688#9711#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/upload.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9053255">
-          <caret line="34" column="6" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -831,25 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="23" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/cropper.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.740741">
-          <caret line="106" column="34" selection-start-line="106" selection-start-column="34" selection-end-line="106" selection-end-column="34" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.814816">
-          <caret line="95" column="62" selection-start-line="95" selection-start-column="62" selection-end-line="95" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -873,15 +766,182 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-94.0">
+          <caret line="626" column="11" selection-start-line="626" selection-start-column="11" selection-end-line="626" selection-end-column="11" />
+          <folding>
+            <element signature="e#91#608#0" expanded="false" />
+            <element signature="e#625#1380#0" expanded="false" />
+            <element signature="e#1396#6717#0" expanded="false" />
+            <element signature="e#1537#2669#0" expanded="false" />
+            <element signature="e#3288#3381#0" expanded="false" />
+            <element signature="e#6730#6991#0" expanded="false" />
+            <element signature="e#6998#7760#0" expanded="false" />
+            <element signature="e#7198#7295#0" expanded="false" />
+            <element signature="e#7305#7429#0" expanded="false" />
+            <element signature="e#7438#7682#0" expanded="false" />
+            <element signature="e#7783#7840#0" expanded="false" />
+            <element signature="e#7852#8152#0" expanded="false" />
+            <element signature="e#8166#9437#0" expanded="false" />
+            <element signature="e#9448#9558#0" expanded="false" />
+            <element signature="e#9570#9676#0" expanded="false" />
+            <element signature="e#9688#9711#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/header/gaia-header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/static/less/color.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54895663">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/static/less/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72542375">
+          <caret line="279" column="3" selection-start-line="279" selection-start-column="3" selection-end-line="279" selection-end-column="3" />
+          <folding>
+            <element signature="e#1906#3883#0" expanded="false" />
+            <element signature="e#3891#5819#0" expanded="false" />
+            <element signature="e#5825#5959#0" expanded="false" />
+            <element signature="e#8551#9818#0" expanded="false" />
+            <element signature="e#20073#20214#0" expanded="false" />
+            <element signature="e#20219#21478#0" expanded="false" />
+            <element signature="e#21481#21537#0" expanded="false" />
+            <element signature="e#21551#21581#0" expanded="false" />
+            <element signature="e#21583#21686#0" expanded="false" />
+            <element signature="e#21697#21739#0" expanded="false" />
+            <element signature="e#21751#21793#0" expanded="false" />
+            <element signature="e#21876#22077#0" expanded="false" />
+            <element signature="e#22089#22125#0" expanded="false" />
+            <element signature="e#22131#22156#0" expanded="false" />
+            <element signature="e#22165#22199#0" expanded="false" />
+            <element signature="e#22206#22948#0" expanded="false" />
+            <element signature="e#22957#23228#0" expanded="false" />
+            <element signature="e#23248#23407#0" expanded="false" />
+            <element signature="e#23428#23588#0" expanded="false" />
+            <element signature="e#23602#23755#0" expanded="false" />
+            <element signature="e#23759#26739#0" expanded="false" />
+            <element signature="e#26741#29713#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/modal/user-modal.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.086677365">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23113964">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/cropper/cropper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.317817">
+          <caret line="78" column="49" selection-start-line="78" selection-start-column="40" selection-end-line="78" selection-end-column="49" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#4;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/README.MD">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re-choose.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.82664526">
+          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/plupload.dev.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="948" column="4" selection-start-line="948" selection-start-column="4" selection-end-line="948" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/mask/mask.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6666667">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/app.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="24.25926">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/pages/upload/main/main.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62439805">
-          <caret line="326" column="24" selection-start-line="326" selection-start-column="24" selection-end-line="326" selection-end-column="24" />
+        <state vertical-scroll-proportion="-1.7407408">
+          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="465" selection-end-column="9" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8378812">
+          <caret line="113" column="12" selection-start-line="113" selection-start-column="12" selection-end-line="113" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

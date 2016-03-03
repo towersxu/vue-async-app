@@ -39,6 +39,19 @@
       },
       'add-file': function(data) {
         this.uploader.addFile(data.blob,data.id);
+      },
+      stop_upload: function () {
+        this.uploader.stop();
+      },
+      cancel_upload: function (files){
+        if(files instanceof Array){
+          if(files.length===0){
+            files = this.uploader.files;
+          }
+          for(var i= 0,max=files.length;i<max;i++){
+            this.uploader.removeFile(files[i]);
+          }
+        }
       }
     },
     ready:function(){
@@ -97,26 +110,19 @@
             }
           },
           'QueueChanged':function(upload){
-            console.log('QueueChanged...');
-            console.log(upload.files)
+//            self.$dispatch('file_queue_change',upload.files);  //添加视频后,通知父组件
           },
           'BeforeUpload': function(up, file) {
-            console.log('BeforeUpload ...')
-            console.log(arguments);
           },
           'UploadProgress': function(up, file) {
+
           },
           'UploadComplete': function() {
-            console.log('UploadComplete ...')
-            console.log(arguments);
+            self.$dispatch('upload-complete');  //上传完成后,通知父组件
           },
           'FileUploaded': function(up, file, info) {
-            console.log('FileUploaded ...')
-            console.log(arguments);
           },
           'Error': function(up, err, errTip) {
-            console.log('Error ...')
-            console.log(arguments);
           }
           // ,
           // 'Key': function(up, file) {

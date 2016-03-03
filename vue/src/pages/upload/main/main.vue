@@ -21,12 +21,9 @@
               <div class="video-items">
                 <div class="video-item" v-for="file in upFiles">
                   <img v-bind:src="file.coverUrl" width="160" height="90">
-
                   <div class="des">
                     <p class="name">{{file.name}}</p>
-
                     <p class="size">{{file.size | trafficTrans}}</p>
-
                     <div class="cover-up-btn" v-on:click="openCoverFile($index)">
                       <div style="position: relative;z-index: 1">上传封面</div>
                       <div class="moxie-shim moxie-shim-html5"
@@ -92,7 +89,6 @@
               <span class="labels-title-des">为更准确的搜索到您的作品,请输入2~20个标签,用空格或逗号分隔;</span>
               <input type="text" class="label-input" v-bind:style="{textIndent:indentLength+'px'}" v-model="labelName"
                      v-on:keyup.enter="setLabel()">
-
               <div class="labels-add" id="labels-wrap-id" v-upload-get-width="labels">
               <span class="label" v-for="label in labels"><span class="arrow"></span><span>{{label}}</span><i
                 class="sp inline-block i22" v-on:click="closeLabel($index)"></i></span>
@@ -161,27 +157,22 @@
                   <div class="film-dl-version">
                     <div class="film-price">
                       <span class="film-version">源视频版本</span>
-
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
                     <div class="film-price">
                       <span class="film-version">4K转码版本</span>
-
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
                     <div class="film-price">
                       <span class="film-version">2K转码版本</span>
-
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
                     <div class="film-price">
                       <span class="film-version">1080P转码版本</span>
-
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
                     <div class="film-price">
                       <span class="film-version">720P转码版本</span>
-
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
 
@@ -251,15 +242,15 @@
           <h1 class="title">正在上传</h1>
           <div class="uploading-process">
             <span class="">合计<span class="data">{{uploadProcess.num}}</span>个作品</span>
-            <span class="process-des">完成<span class="data">{{uploadProcess.num}}</span>个</span>
-            <span class="process-des">剩余<span class="data">{{uploadProcess.size}}</span></span>
-            <span class="process-des">总进度<span class="data">10%</span></span>
-            <span class="process-des">平均速度<span class="data">534KB/s</span></span>
-            <span class="process-des">预计耗时<span class="data">45分钟23秒</span></span>
+            <span class="process-des">完成<span class="data">{{uploadProcess.uploaded}}</span>个</span>
+            <span class="process-des">剩余<span class="data">{{(uploadProcess.size-uploadProcess.loaded) | trafficTrans}}</span></span>
+            <span class="process-des">总进度<span class="data">{{(uploadProcess.loaded/uploadProcess.size*100).toFixed(2)}}%</span></span>
+            <span class="process-des">平均速度<span class="data">{{uploadProcess.avaSpeed | trafficTrans}}/s</span></span>
+            <span class="process-des">预计耗时<span class="data">{{uploadProcess.avaSpeed?(uploadProcess.size-uploadProcess.loaded)/uploadProcess.avaSpeed:0 | timeTrans}}</span></span>
           </div>
           <div class="uploading-option">
-            <span class="sp1 s1 inline-block"></span><span class="pause">全部暂停</span>
-            <span class="sp1 s2 inline-block"></span><span class="cancel">全部取消</span>
+            <span class="sp1 s1 inline-block"></span><span class="pause" v-on:click="pauseAll()">全部暂停</span>
+            <span class="sp1 s2 inline-block"></span><span class="cancel" v-on:click="cancelAll()">全部取消</span>
           </div>
         </div>
         <div class="uploading-content" v-show="!isUploadingSuccess">
@@ -280,7 +271,7 @@
                 <div class="process-des">
                   <span class="rate">进度{{item.percent}}%</span>
                   <span>{{item.speed | trafficTrans}}/s</span>
-                  <span>{{uploadProcess.fileSpeed[$index] | timeTrans}}</span>
+                  <span>{{uploadProcess.time[$index] | timeTrans}}</span>
                 </div>
                 <div class="process-option">
                   <span class="sp1 s5 inline-block"></span>
@@ -290,14 +281,20 @@
             </div>
           </div>
         </div>
-        <div class="uploading-finish uploading-content" v-show="isUploadingSuccess">
-          <h2>上传完成</h2>
-          <p>欢迎您的作品在Gaiamount安家</p>
-          <p>去<a href="javascript:0">我的主页</a>页面看看 </p>
+        <div class="uploading-finish" v-show="isUploadingSuccess">
+          <div class="upload-bg">
+            <img src="upbg.jpg">
+          </div>
+          <div class="upload-suc">
+            <h2>上传完成</h2>
+            <p>欢迎您的作品在Gaiamount安家</p>
+            <p>去<a href="javascript:0">我的主页</a>页面看看 </p>
+          </div>
         </div>
       </div>
     </div>
     <cropper></cropper>
+    <re-choose></re-choose>
   </div>
 
 </template>
@@ -307,6 +304,7 @@
   var select = require('../select/select.vue');
   var upload = require('../../../components/qn_upload/qnupload.vue');
   var cropper = require('../../../components/cropper/cropper.vue');
+  var reChoose = require('./re-choose/re-choose.vue');
   var util = require('../../../util/util.js');
   var filter = require('../../../filters/trans.js');
   /**
@@ -324,8 +322,8 @@
         upFiles: [],              //上传视频文件显示列表
         isChooseTypes: false,     //控制选择分类的关闭和展开
         isSetDownload: false,     //控制下载设置的关闭和展开
-        isUploading:true,        //控制是否正在上传
-        isUploadingSuccess:true,  //上传成功
+        isUploading:false,        //控制是否正在上传
+        isUploadingSuccess:false,  //上传成功
         downloadType: 1,          //下载设置的tab选项
         isEdit: false,            //控制是否进行编辑
         indentLength: 20,         //设置标签输入框的indent
@@ -334,18 +332,34 @@
       }
     },
     computed:{
+      /**
+       * uploadProcess 计算属性 根据upFiles的属性,计算上传的总状态
+       */
       uploadProcess:function(){
         var obj = {
-          size:0,
-          fileSpeed:[0,0,0,0,0]
+          size:0,                 //总大小
+          loaded:0,               //已上传
+          num:0,                  //上传文件数
+          avaSpeed:0,             //平均速度
+          uploaded:0,             //完成个数
+          time:[0,0,0,0,0]        //上传剩余时间
         };
         obj.num = this.upFiles.length;
         for(var i= 0,max = this.upFiles.length;i<max;i++){
           obj.size += this.upFiles[i].size;
-          obj.fileSpeed[i] =this.upFiles[i].speed?(this.upFiles[i].size-this.upFiles[i].loaded)/this.upFiles[i].speed:0;
+          obj.loaded += this.upFiles[i].loaded;
+          obj.time[i] = this.upFiles[i].speed?(this.upFiles[i].size-this.upFiles[i].loaded)/this.upFiles[i].speed:0;
+          //obj.avaSpeed += this.upFiles[i].status===5?0:Number(this.upFiles[i].speed);   由于同时只能有一个文件上传
+          if(this.upFiles[i].status !== 5){
+            obj.avaSpeed = Math.max(obj.avaSpeed,Number(this.upFiles[i].speed));
+          }
+          obj.uploaded += Math.floor(this.upFiles[i].percent/100);
         }
         return obj;
       }
+    },
+    ready:function(){
+      this.$broadcast('re-choose', {reChooseOps:[{name:'深圳航拍.mov',percent:65},{name:'深圳航拍2.mov',percent:11}]});
     },
     methods: {
       /**
@@ -401,11 +415,6 @@
       uploadFile: function () {
         this.$broadcast('upload-file');
         this.isUploading = true;
-        var self = this;
-        setTimeout(function(){
-          console.log('self.upFiles:');
-          console.log(self.upFiles);
-        },3000)
       },
       /**
        * 选择视频封面
@@ -422,13 +431,22 @@
        */
       openCoverFile: function (idx) {
         this.$broadcast('show_cropper',{idx:idx,coverUrl:this.upFiles[idx].coverUrl});
+      },
+      pauseAll: function (){
+        this.$broadcast('stop_upload');
+      },
+      cancelAll: function (){
+        this.$broadcast('cancel_upload',this.upFiles);
+        this.isUploading = false;
+        this.isUploadingSuccess = false;
       }
     },
     components: {
       editor: editor,
       selectAdd: select,
       upload: upload,
-      cropper:cropper
+      cropper:cropper,
+      reChoose:reChoose
     },
     events: {
       /**
@@ -438,7 +456,6 @@
       'file-add': function (files) {
         for (var i = 0, max = files.length; i < max; i++) {
           var idx = this.getFileIdx(files[i]);
-          console.log('file idx:'+idx);
           if (this.getFileIdx(files[i])==-1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
             this.upFiles.push(files[i]);
             Vue.set(files[i], 'speed', 0);
@@ -447,8 +464,22 @@
             this.$broadcast('delete-file', files[i].id)
           }
         }
-        console.log('file add ...');
-        console.log(this.upFiles);
+      },
+      'file_queue_change': function (files){
+        this.upFiles = [];
+        for (var i = 0, max = files.length; i < max; i++) {
+          //不显示图片
+          if(!/image\/\w+/.test(files[i].type)) { //如果不是图片
+            var idx = this.getFileIdx(files[i]);
+            if (this.getFileIdx(files[i])==-1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
+              this.upFiles.push(files[i]);
+              Vue.set(files[i], 'speed', 0);
+              Vue.set(files[i], 'coverUrl', '/static/img/vbg.jpg')
+            } else {
+              this.$broadcast('delete-file', files[i].id)
+            }
+          }
+        }
       },
       /**
        * 监听事件,增加封面
@@ -465,6 +496,12 @@
         msg.id=this.upFiles[msg.idx].id;   //id将作为图片文件的名字.
         msg.blob=util.dataURLtoBlob(msg.dataurl);
         this.$broadcast('add-file', msg);
+      },
+      /**
+       * upload-complete 监听上传完成事件
+       */
+      'upload-complete':function () {
+        this.isUploadingSuccess = true;
       }
     }
   }

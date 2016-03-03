@@ -2,7 +2,6 @@
   <div class="modal reg-panel reg-panel-2 animated" v-show="isReg" transition="fade">
     <div class="head">
       <i class="block sp i183 r-logo"></i>
-
       <h3>欢迎加入</h3>
       <i class="block close sp i103" v-on:click.stop="closeModal()"></i>
     </div>

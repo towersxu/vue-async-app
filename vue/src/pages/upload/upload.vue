@@ -52,6 +52,9 @@
         });
       } else {
         console.log('this is upload!');
+        //如果模块已经存在,对模块进行初始化操作
+        console.log('data........');
+        console.log(this.asyncUploadModule.$data);
       }
     },
     methods:{
