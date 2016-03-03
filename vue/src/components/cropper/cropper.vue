@@ -54,49 +54,69 @@
         cropper:{},
         defaultImage:'',
         resultImage:'',
-        msg:{}
+        msg:{},
+        fileEle:''
       }
     },
     ready:function(){
       this.defaultImage = new Image();
       this.defaultImage.src = '/static/img/vbg.jpg';
+      this.fileEle = document.getElementById('cropper-cover-upload');
     },
     methods:{
       closeModal:function(){
         this.isShow = false;
       },
       replace:function(){
-        var e = document.getElementById('cropper-cover-upload');
-        e && e.click();
+        this.fileEle.click();
       },
+      /**
+       * 获取file元素中的文件,如果是图片,则显示在cropper中
+       */
       selectCoverFile:function(){
-        var self = this;
-        var e = document.getElementById('cropper-cover-upload');
-        var f = e && e.files[0];
-        util.blobOrFileToDataUrl(f,function(result){
-          self.cropper.replace(result);
-        });
+        var f,
+          self = this;
+        f = this.fileEle && this.fileEle.files[0];
+        if(f){
+          util.blobOrFileToDataUrl(f,function(result){
+            if(/data:image\/\w+;base64/.test(result)){
+              self.cropper.replace(result);
+            }
+          });
+        }
       },
+      /**
+       * 旋转图片
+       * @param degree 旋转度数
+       */
       rotate:function(degree){
         this.cropper.rotate(degree);
       },
+      /**
+       *  重置图片
+       */
       reset:function(){
         this.cropper.reset();
       },
+      /**
+       * 保存cropper
+       */
       saveCover:function() {
         if(this.cropper.getCroppedCanvas){
           this.msg.dataurl = this.cropper.getCroppedCanvas().toDataURL('image/jpeg');
-          this.$dispatch('cropper_result',this.msg);
+          this.$dispatch('cropper-result',this.msg);
           this.cropper.destroy();
           this.isShow = false;
         }
-      }
-    },
-    events:{
-      'show_cropper': function (msg) {
-        var canvas = document.getElementById('canvas');
-        var width = this.defaultImage.width || 400;
-        var height = this.defaultImage.height || 400;
+      },
+      /**
+       * 创建cropper
+       */
+      createCropper:function(){
+        var canvas = document.getElementById('canvas'),
+            width  = this.defaultImage.width || 400,
+            height = this.defaultImage.height || 400;
+
         canvas.width = width;
         canvas.height = height;
         canvas.getContext('2d').drawImage(
@@ -108,15 +128,14 @@
           aspectRatio: 16 / 9,
           preview:'.img-preview',
           crop: function(data) {
-            console.log(data.x);
-            console.log(data.y);
-            console.log(data.width);
-            console.log(data.height);
-            console.log(data.rotate);
-            console.log(data.scaleX);
-            console.log(data.scaleY);
           }
         });
+      }
+    },
+    events:{
+      'show_cropper': function (msg) {
+        this.createCropper();
+        this.selectCoverFile();
         this.isShow = true;
         this.msg = msg;
       }

@@ -35,11 +35,9 @@
         }
       },
       'upload-file': function () {
-        console.log(this.uploader);
         this.uploader.start();
       },
       'add-file': function(data) {
-        console.log('add-file')
         this.uploader.addFile(data.blob,data.id);
       }
     },
@@ -71,25 +69,31 @@
         auto_start: false,
         log_level: 5,
         init: {
+          /**
+           * @des files只有两种情况,1是在添加视频的时候,产生多个视频.这个时候
+           * @param up
+           * @param files
+           */
           'FilesAdded': function(up, files) {
-            console.log('FilesAdded...');
             var coverAddFlag = false;
             for(var i=0;i<files.length;i++){
               if(/image\/\w+/.test(files[i].type)){ //如果是图片
                 var file = up.getFile(files[i].name);
                 if(file) { // ,判断该图片是否是文件的封面
                   if(file.coverImageId){   //如果已经存在封面
-                    this.uploader.removeFile(this.uploader.getFile(file.coverImageId));
+                    up.removeFile(up.getFile(file.coverImageId));
                   }
                   file.coverImageId = files[i].id;
-                  self.$dispatch('cover-add',file);
+//                  self.$dispatch('cover-add',file);
                   coverAddFlag = true;
                 }
+              } else {  //不是图片,则表示不是封面,将不是视频的文件移除上传队列.
+
               }
             }
             if(!coverAddFlag){
               self.files.concat(files);
-              self.$dispatch('file-add',files);
+              self.$dispatch('file-add',files);  //添加视频后,通知父组件
             }
           },
           'QueueChanged':function(upload){
@@ -101,8 +105,6 @@
             console.log(arguments);
           },
           'UploadProgress': function(up, file) {
-            console.log('UploadProgress ...')
-            console.log(arguments);
           },
           'UploadComplete': function() {
             console.log('UploadComplete ...')

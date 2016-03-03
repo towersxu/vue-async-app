@@ -540,6 +540,10 @@
     .cancel{
       cursor: pointer;
     }
+    .sp1{
+      margin-right: 5px;
+      margin-left: 10px;
+    }
   }
 }
 .uploading-content{
@@ -550,6 +554,7 @@
     padding: 20px 0;
     border-bottom: 1px solid @grey_border_1;
     overflow: hidden;
+    position: relative;
     img{
       width: 160px;
       height: 90px;
@@ -573,6 +578,15 @@
       font-size: 14px;
       color: @font_grey;
       margin-right: 10px;
+      max-width: 250px;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    .rate{
+      color: @font_blue;
     }
     .process-bar{
       width: 600px;
@@ -584,6 +598,18 @@
         height: 14px;
         background: @red;
         border-radius: 6.5px;
+      }
+    }
+    .process-des{
+      margin-top: 5px;
+    }
+    .process-option{
+      position: absolute;
+      right: 15px;
+      top: 57px;
+      span{
+        margin-right: 15px;
+        cursor: pointer;
       }
     }
   }

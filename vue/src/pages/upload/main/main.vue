@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="base-bg upload-panel">
-      <div class="container hidden">
+      <div class="container" v-show="!isUploading" transition="fade">
         <div class="upload-des">
           <h1>上传作品</h1>
           <span class="space">本周可用空间560.5MB</span><span class="split">|</span><span>总可用空间28.4GB</span>
@@ -17,7 +17,6 @@
         <div class="upload-detail">
           <div class="video-list">
             <p class="tips-none" v-show="upFiles.length===0">- 未添加作品! -</p>
-
             <div class="list-wrap" v-show="upFiles.length>0">
               <div class="video-items">
                 <div class="video-item" v-for="file in upFiles">
@@ -26,7 +25,7 @@
                   <div class="des">
                     <p class="name">{{file.name}}</p>
 
-                    <p class="size">{{file.size}}</p>
+                    <p class="size">{{file.size | trafficTrans}}</p>
 
                     <div class="cover-up-btn" v-on:click="openCoverFile($index)">
                       <div style="position: relative;z-index: 1">上传封面</div>
@@ -247,41 +246,54 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" v-show="isUploading" transition="fade">
         <div class="uploading-head">
           <h1 class="title">正在上传</h1>
           <div class="uploading-process">
-            <span class="">合计<span class="data">5</span>个作品</span>
-            <span class="process-des">完成<span class="data">5</span>个</span>
-            <span class="process-des">剩余<span class="data">3221.0MB</span></span>
+            <span class="">合计<span class="data">{{uploadProcess.num}}</span>个作品</span>
+            <span class="process-des">完成<span class="data">{{uploadProcess.num}}</span>个</span>
+            <span class="process-des">剩余<span class="data">{{uploadProcess.size}}</span></span>
             <span class="process-des">总进度<span class="data">10%</span></span>
             <span class="process-des">平均速度<span class="data">534KB/s</span></span>
             <span class="process-des">预计耗时<span class="data">45分钟23秒</span></span>
           </div>
           <div class="uploading-option">
-            <span class="pause">全部暂停</span>
-            <span class="cancel">全部取消</span>
+            <span class="sp1 s1 inline-block"></span><span class="pause">全部暂停</span>
+            <span class="sp1 s2 inline-block"></span><span class="cancel">全部取消</span>
           </div>
         </div>
-        <div class="uploading-content">
+        <div class="uploading-content" v-show="!isUploadingSuccess">
           <div class="uploading-items">
-            <div class="item">
-              <img src="vbg.jpg">
+            <div class="item" v-for="item in upFiles">
+              <img v-bind:src="item.coverUrl">
               <div class="process">
                 <div class="process-detail">
-                  <span class="name">名称是声明奥迪</span>
-                  <span>2.4G</span>
+                  <span class="name">{{item.name}}</span>
+                  <span>{{item.size | trafficTrans}}</span>
                   <span>MOV</span>
                   <span>公开</span>
                   <span>不允许下载</span>
                 </div>
                 <div class="process-bar">
-                  <div class="process-rate" style="width: 30%"></div>
+                  <div class="process-rate" v-bind:style="{width:item.percent+'%'}"></div>
                 </div>
-                <div class="process-des"></div>
+                <div class="process-des">
+                  <span class="rate">进度{{item.percent}}%</span>
+                  <span>{{item.speed | trafficTrans}}/s</span>
+                  <span>{{uploadProcess.fileSpeed[$index] | timeTrans}}</span>
+                </div>
+                <div class="process-option">
+                  <span class="sp1 s5 inline-block"></span>
+                  <span class="sp1 s3 inline-block"></span>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="uploading-finish uploading-content" v-show="isUploadingSuccess">
+          <h2>上传完成</h2>
+          <p>欢迎您的作品在Gaiamount安家</p>
+          <p>去<a href="javascript:0">我的主页</a>页面看看 </p>
         </div>
       </div>
     </div>
@@ -296,6 +308,7 @@
   var upload = require('../../../components/qn_upload/qnupload.vue');
   var cropper = require('../../../components/cropper/cropper.vue');
   var util = require('../../../util/util.js');
+  var filter = require('../../../filters/trans.js');
   /**
    * module upload-get-width
    * des 在动态添加标签时,将标签显示在输入框上,同时修改输入框的indent
@@ -308,14 +321,30 @@
   module.exports = {
     data: function () {
       return {
-        upFiles: [],         //上传文件显示列表
-        isChooseTypes: false,//控制选择分类的关闭和展开
-        isSetDownload: false,//控制下载设置的关闭和展开
-        downloadType: 1,     //下载设置的tab选项
-        isEdit: false,       //控制是否进行编辑
-        indentLength: 20,    //设置标签输入框的indent
-        labelName: '',       //设置标签输入框的model
-        labels: []           //存储设置的标签
+        upFiles: [],              //上传视频文件显示列表
+        isChooseTypes: false,     //控制选择分类的关闭和展开
+        isSetDownload: false,     //控制下载设置的关闭和展开
+        isUploading:true,        //控制是否正在上传
+        isUploadingSuccess:true,  //上传成功
+        downloadType: 1,          //下载设置的tab选项
+        isEdit: false,            //控制是否进行编辑
+        indentLength: 20,         //设置标签输入框的indent
+        labelName: '',            //设置标签输入框的model
+        labels: []                //存储设置的标签
+      }
+    },
+    computed:{
+      uploadProcess:function(){
+        var obj = {
+          size:0,
+          fileSpeed:[0,0,0,0,0]
+        };
+        obj.num = this.upFiles.length;
+        for(var i= 0,max = this.upFiles.length;i<max;i++){
+          obj.size += this.upFiles[i].size;
+          obj.fileSpeed[i] =this.upFiles[i].speed?(this.upFiles[i].size-this.upFiles[i].loaded)/this.upFiles[i].speed:0;
+        }
+        return obj;
       }
     },
     methods: {
@@ -371,6 +400,12 @@
        */
       uploadFile: function () {
         this.$broadcast('upload-file');
+        this.isUploading = true;
+        var self = this;
+        setTimeout(function(){
+          console.log('self.upFiles:');
+          console.log(self.upFiles);
+        },3000)
       },
       /**
        * 选择视频封面
@@ -383,9 +418,10 @@
       /**
        * 显示封面选择modal
        * @param idx 视频序号0-4
+       * @event show_cropper
        */
       openCoverFile: function (idx) {
-        this.$broadcast('show_cropper',{idx:idx});
+        this.$broadcast('show_cropper',{idx:idx,coverUrl:this.upFiles[idx].coverUrl});
       }
     },
     components: {
@@ -401,17 +437,18 @@
        */
       'file-add': function (files) {
         for (var i = 0, max = files.length; i < max; i++) {
-          if (this.getFileIdx(files[i]) === -1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
-            this.upFiles.push({
-              name: files[i].name,
-              id: files[i].id,
-              size: files[i].size,
-              coverUrl:'/static/img/vbg.jpg'
-            });
+          var idx = this.getFileIdx(files[i]);
+          console.log('file idx:'+idx);
+          if (this.getFileIdx(files[i])==-1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
+            this.upFiles.push(files[i]);
+            Vue.set(files[i], 'speed', 0);
+            Vue.set(files[i], 'coverUrl', '/static/img/vbg.jpg')
           } else {
             this.$broadcast('delete-file', files[i].id)
           }
         }
+        console.log('file add ...');
+        console.log(this.upFiles);
       },
       /**
        * 监听事件,增加封面
@@ -419,9 +456,13 @@
        */
       'cover-add': function (file) {
       },
-      'cropper_result':function (msg) {
+      /**
+       * cropper-result 由cropper组件广播的事件.
+       * @param msg
+       */
+      'cropper-result':function (msg) {
         this.upFiles[msg.idx].coverUrl = msg.dataurl;
-        msg.id=this.upFiles[msg.idx].id;
+        msg.id=this.upFiles[msg.idx].id;   //id将作为图片文件的名字.
         msg.blob=util.dataURLtoBlob(msg.dataurl);
         this.$broadcast('add-file', msg);
       }

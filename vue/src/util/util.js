@@ -23,11 +23,22 @@ module.exports = {
    * @param blob binary large object or file
    * @fn callback
    */
-  blobOrFileToDataUrl(blob,fn){
+  blobOrFileToDataUrl:function(blob,fn){
     var a = new FileReader();
     a.onload = function(e){
       fn(e.target.result);
     };
     a.readAsDataURL(blob);
+  },
+  transFileSize:function(bytes){
+    var measures = ['B','KB','MB','GB','TB'],idx=0;
+    if(typeof bytes !=='number'){
+      bytes = Number(bytes) || 0;
+    }
+    while(bytes > 1024){
+      bytes = bytes/1024;
+      idx++;
+    }
+    return bytes.toFixed(2)+measures[idx];
   }
 };
