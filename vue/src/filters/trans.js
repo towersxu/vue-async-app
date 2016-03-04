@@ -21,10 +21,8 @@ Vue.filter('timeTrans', function (seconds){
   seconds = Math.ceil(seconds);
   while(seconds > 59 && idx<2){
     res = (seconds%60).toFixed(0)+measures[idx]+res;
-    console.log(res);
     idx=idx+1;
     seconds = seconds/60;
-    console.log(seconds+'-'+idx);
   }
   return seconds.toFixed(0)+measures[idx]+res;
 });

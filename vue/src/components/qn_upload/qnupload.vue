@@ -33,6 +33,7 @@
           }
           this.uploader.removeFile(this.uploader.getFile(fileId));
         }
+        var self = this;
       },
       'upload-file': function () {
         this.uploader.start();
@@ -69,7 +70,7 @@
         domain: 'http://7xqjp2.com1.z0.glb.clouddn.com',
         get_new_uptoken: false,
         // downtoken_url: '/downtoken',
-        unique_names: true,
+        unique_names: false,
         // save_key: true,
         // x_vars: {
         //     'id': '1234',
@@ -108,22 +109,29 @@
               self.files.concat(files);
               self.$dispatch('file-add',files);  //添加视频后,通知父组件
             }
+            console.log('file-added...........');
           },
-          'QueueChanged':function(upload){
+//          'FilesRemoved':function(up,files){
+//            console.log('file-removed...........');
+//            self.$dispatch('file-removed',files);
+//          },
+//          'QueueChanged':function(upload){
 //            self.$dispatch('file_queue_change',upload.files);  //添加视频后,通知父组件
-          },
-          'BeforeUpload': function(up, file) {
-          },
-          'UploadProgress': function(up, file) {
-
-          },
+//          },
+//          'BeforeUpload': function(up, file) {
+//          },
+//          'UploadProgress': function(up, file) {
+//
+//          },
           'UploadComplete': function() {
             self.$dispatch('upload-complete');  //上传完成后,通知父组件
+
           },
           'FileUploaded': function(up, file, info) {
-          },
-          'Error': function(up, err, errTip) {
+
           }
+//          'Error': function(up, err, errTip) {
+//          }
           // ,
           // 'Key': function(up, file) {
           //     var key = "";

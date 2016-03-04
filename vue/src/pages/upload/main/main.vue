@@ -40,11 +40,11 @@
             </div>
           </div>
           <div class="public-tabs">
-            <div class="tab selected">
+            <div class="tab" v-bind:class="{'selected':!isPrivate}" v-on:click="isPrivate=false">
               <i class="inline-block sp i70"></i>
               <span>公开作品</span>
             </div>
-            <div class="tab">
+            <div class="tab" v-bind:class="{'selected2':isPrivate}" v-on:click="isPrivate=true">
               <i class="inline-block sp i69"></i>
               <span>加密作品</span>
             </div>
@@ -128,10 +128,13 @@
               <div class="film-d-title" v-on:click="isSetDownload=true"><span class="red-star-import">下载设置</span></div>
               <div class="film-download-items" v-show="isSetDownload" transition="expand-download">
                 <div class="film-dl-wrap">
+                  <div class="film-dl-item pass-box" v-show="isPrivate">
+                    <span class="title">加密密码</span>
+                    <input type="text" class="pass" placeholder="请输入加密密码"></div>
                   <div class="film-dl-item" v-bind:class="{'selected': downloadType===1 }" v-on:click="downloadType=1"><i
                     class="inline-block sp i125"></i><span>允许他人下载</span></div>
-                  <div class="film-dl-item" v-bind:class="{'selected': downloadType===2 }" v-on:click="downloadType=2"><i
-                    class="inline-block sp i125"></i><span>允许他人下载</span></div>
+                  <div class="film-dl-item" v-bind:class="{'selected': downloadType===2 }" v-on:click="downloadType=2"  v-show="!isPrivate"><i
+                    class="inline-block sp i125"></i><span>允许他人付费下载</span></div>
                   <div class="film-dl-item" v-bind:class="{'selected': downloadType===3 }" v-on:click="downloadType=3"><i
                     class="inline-block sp i125"></i><span>不允许他人下载</span></div>
                 </div>
@@ -175,9 +178,7 @@
                       <span class="film-version">720P转码版本</span>
                       <div class="input-wrap"><input type="text"><span class="measure">元</span></div>
                     </div>
-
                   </div>
-
                 </div>
                 <div v-show="downloadType===3">
                   <p class="film-dl-version-tips">
@@ -320,6 +321,7 @@
     data: function () {
       return {
         upFiles: [],              //上传视频文件显示列表
+        isPrivate:false,          //加密与公开
         isChooseTypes: false,     //控制选择分类的关闭和展开
         isSetDownload: false,     //控制下载设置的关闭和展开
         isUploading:false,        //控制是否正在上传
@@ -437,6 +439,7 @@
       },
       cancelAll: function (){
         this.$broadcast('cancel_upload',this.upFiles);
+        this.upFiles = [];
         this.isUploading = false;
         this.isUploadingSuccess = false;
       }
@@ -465,22 +468,35 @@
           }
         }
       },
-      'file_queue_change': function (files){
-        this.upFiles = [];
-        for (var i = 0, max = files.length; i < max; i++) {
-          //不显示图片
-          if(!/image\/\w+/.test(files[i].type)) { //如果不是图片
-            var idx = this.getFileIdx(files[i]);
-            if (this.getFileIdx(files[i])==-1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
-              this.upFiles.push(files[i]);
-              Vue.set(files[i], 'speed', 0);
-              Vue.set(files[i], 'coverUrl', '/static/img/vbg.jpg')
-            } else {
-              this.$broadcast('delete-file', files[i].id)
-            }
-          }
-        }
-      },
+//      'file-removed': function (files){
+//        for (var i = 0, max = files.length; i < max; i++) {
+//          var idx = this.getFileIdx(files[i]);
+//          if(idx > -1){
+//            this.upFiles.splice(idx,1);
+//            console.log(this.upFiles[0].name);
+//            console.log(this.upFiles.length);
+//            console.log(this.upFiles);
+//          }
+//        }
+//      },
+//      'file_queue_change': function (files){
+//        this.upFiles = [];
+//        for (var i = 0, max = files.length; i < max; i++) {
+//          //不显示图片
+//          if(!/image\/\w+/.test(files[i].type)) { //如果不是图片
+//            var idx = this.getFileIdx(files[i]);
+//            if (this.getFileIdx(files[i])==-1 && this.upFiles.length < 6) { //判断该文件是否已经在上传队列中,不能重复上传相同的文件.
+//              this.upFiles.push(files[i]);
+//              if(!files[i].coverUrl){
+//                Vue.set(files[i], 'coverUrl', '/static/img/vbg.jpg')
+//              }
+//              Vue.set(files[i], 'speed', 0);
+//            } else {
+//              this.$broadcast('delete-file', files[i].id)
+//            }
+//          }
+//        }
+//      },
       /**
        * 监听事件,增加封面
        * @param file 文件
@@ -502,6 +518,7 @@
        */
       'upload-complete':function () {
         this.isUploadingSuccess = true;
+        this.upFiles = [];
       }
     }
   }

@@ -11,10 +11,8 @@
       <div class="complain">
         <a href="#">举报/投诉</a>
       </div>
-      <div class="video-box">
-        <video id="vid1" class="video-js gaia show-control vjs-default-skin " controls preload="auto" width="860" height="482" poster="./B3.jpg">
-          <p>Video Playback Not Supported</p>
-        </video>
+      <div id="example">
+        <video-js></video-js>
       </div>
       <div class="video-info">
         <h2 class="title">视频标题在这里显示的1080p</h2>
@@ -171,5 +169,68 @@
   </div>
 </template>
 <script>
-  module.exports = {}
+  var videoJs = require("../../../components/video-js/video.vue");
+  module.exports = {
+    data:function(){
+      return {
+        msg: 'Hello from vue-loader!'
+      }
+    },
+    components:{
+      videoJs:videoJs
+    },
+    ready:function(){
+      this.$broadcast('play_video',{
+        controlBar: {
+          volumeMenuButton: {
+            inline: false,
+            vertical: true
+          },
+          PlayResolutions:{
+            idx:2,   //0-n
+            videos:[
+              {
+                name:'2K',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FluGJHug3Kr_Exxv3Fxe16pqNMeNV',
+                type: 'application/vnd.apple.mpegurl'
+              },
+              {
+                name:'MP4',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/James%20Blunt%20-%20If%20Time%20Is%20All%20I%20Have.mp4',
+                type: 'video/mp4'
+              },
+              {
+                name:'720p',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2Flv3a3j1mfcgOb4TYIF9-3K3vFL3d',
+                type: 'application/vnd.apple.mpegurl'
+              }
+            ]
+          },
+          PlayerRatio:{
+            idx:1,
+            ratios:[
+              {
+                name:'16:9',
+                width:'860',
+                height:'483'
+              },
+              {
+                name:'4:3',
+                width:'860',
+                height:'645'
+              }
+            ]
+          },
+          LogoText:{
+            click:function(){
+              console.log('this is logo');
+            }
+          }
+        }
+      });
+    },
+    methods:{
+
+    }
+  }
 </script>

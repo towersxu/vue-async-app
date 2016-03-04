@@ -27,7 +27,7 @@
         this.isShow = true;
         if (!this.asyncModule) {
           var that = this;
-          var Vue = require('vue');
+//          var Vue = require('vue');
           Vue.component('async', function (resolve, reject) {
             require.ensure(["../modal/user-modal.vue"], function (require) {
               that.isLoading = false;
