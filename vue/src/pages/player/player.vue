@@ -33,7 +33,6 @@
     ready:function(){
       if (!this.asyncPlayerModule) {
         var that = this;
-        var Vue = require('vue');
         Vue.component('playMain', function (resolve, reject) {
           require.ensure(["./main/main.vue"], function (require) {
             that.isLoading = false;

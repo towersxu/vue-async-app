@@ -5,6 +5,7 @@ import home from './pages/home/home.vue'
 import upload from './pages/upload/upload.vue'
 import player from './pages/player/player.vue'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 
 import './static/less/style.less'
 import './static/less/animate.less'
@@ -13,7 +14,7 @@ import './static/less/films.less'
 import './static/less/play.less'
 
 Vue.use(VueRouter);
-
+Vue.use(VueResource);
 Vue.transition('fade',{
   enterClass:'fadeInDown',
   leaveClass:'fadeOutDown'

@@ -13,8 +13,6 @@
     data:function(){
       player:{}
     },
-    ready:function(){
-    },
     methods:{
       'initVideo':function(msg){
         msg = msg || {};
@@ -33,7 +31,10 @@
         videojs.plugin('progressed', progressed);
 
         // initialize it
-        this.player = videojs('vid1',msg);
+        this.player = videojs('#vid1',msg);
+      },
+      'pausedVideo':function(msg){
+
       }
     },
     events:{
