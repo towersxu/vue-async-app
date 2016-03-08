@@ -34,9 +34,9 @@
       'delete-file':function(fileId){
         var file = this.uploader.getFile(fileId);
         if(file){
-          if(file.coverImageId){
-            this.uploader.removeFile(this.uploader.getFile(file.coverImageId));
-          }
+//          if(file.coverImageId){
+//            this.uploader.removeFile(this.uploader.getFile(file.coverImageId));
+//          }
           this.uploader.removeFile(this.uploader.getFile(fileId));
         }
         var self = this;
@@ -64,10 +64,7 @@
        * 上传图片到空间中
        */
       img_upload_add:function(data){
-        console.log(this.uploader2);
-        console.log(this.uploader);
         this.uploader2.addFile(data.blob);
-        console.log(this.uploader2);
       }
     },
     ready:function(){
@@ -94,26 +91,27 @@
            * @param files
            */
           'FilesAdded': function(up, files) {
-            var coverAddFlag = false;
-            for(var i=0;i<files.length;i++){
-              if(/image\/\w+/.test(files[i].type)){ //如果是图片
-                var file = up.getFile(files[i].name);
-                if(file) { // ,判断该图片是否是文件的封面
-                  if(file.coverImageId){   //如果已经存在封面
-                    up.removeFile(up.getFile(file.coverImageId));
-                  }
-                  file.coverImageId = files[i].id;
-                  coverAddFlag = true;
-                }
-              } else {  //不是图片,则表示不是封面,将不是视频的文件移除上传队列.
-
-              }
-            }
-            if(!coverAddFlag){
+//            var coverAddFlag = false;
+//            for(var i=0;i<files.length;i++){
+//              if(/image\/\w+/.test(files[i].type)){ //如果是图片
+//                var file = up.getFile(files[i].name);
+//                if(file) { // ,判断该图片是否是文件的封面
+//                  if(file.coverImageId){   //如果已经存在封面
+//                    up.removeFile(up.getFile(file.coverImageId));
+//                  }
+//                  file.coverImageId = files[i].id;
+//                  coverAddFlag = true;
+//                }
+//              } else {  //不是图片,则表示不是封面,将不是视频的文件移除上传队列.
+//
+//              }
+//            }
+//            if(!coverAddFlag){
+//              console.log(files[i].type)
               self.files.concat(files);
               self.$dispatch('file-add',files);  //添加视频后,通知父组件
-            }
-            console.log('file-added...........');
+//            }
+//            console.log('file-added...........');
           },
           'UploadComplete': function() {
             self.$dispatch('upload-complete');  //上传完成后,通知父组件

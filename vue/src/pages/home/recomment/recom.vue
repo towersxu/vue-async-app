@@ -97,6 +97,11 @@
                     name:'1080p',
                     src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FlqDkuRYFVokC045xBdCN2UyAqY3_',
                     type: 'application/vnd.apple.mpegurl'
+                  },
+                  {
+                    name:'2K',
+                    src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FlqDkuRYFVokC045xBdCN2UyAqY3_',
+                    type:'application/vnd.apple.mpegurl'
                   }
                 ]
               },

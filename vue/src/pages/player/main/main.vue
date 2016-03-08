@@ -190,19 +190,24 @@
             idx:2,   //0-n
             videos:[
               {
-                name:'2K',
-                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FluGJHug3Kr_Exxv3Fxe16pqNMeNV',
+                name:'720p',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2Flv3a3j1mfcgOb4TYIF9-3K3vFL3d',
                 type: 'application/vnd.apple.mpegurl'
               },
               {
                 name:'MP4',
-                src:'http://7xqjp2.com1.z0.glb.clouddn.com/James%20Blunt%20-%20If%20Time%20Is%20All%20I%20Have.mp4',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/Michael%20Jackson%20-%20Hollywood%20Tonight.mp4',
                 type: 'video/mp4'
               },
               {
-                name:'720p',
-                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2Flv3a3j1mfcgOb4TYIF9-3K3vFL3d',
+                name:'1080p',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FlqDkuRYFVokC045xBdCN2UyAqY3_',
                 type: 'application/vnd.apple.mpegurl'
+              },
+              {
+                name:'2K',
+                src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FlqDkuRYFVokC045xBdCN2UyAqY3_',
+                type:'application/vnd.apple.mpegurl'
               }
             ]
           },

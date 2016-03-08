@@ -519,13 +519,13 @@
         this.upFiles[msg.idx].coverUrl = msg.dataurl;
         msg.id=this.upFiles[msg.idx].id;   //id将作为图片文件的名字.
         msg.blob=util.dataURLtoBlob(msg.dataurl);
-        this.$broadcast('add-file', msg);
+        this.$broadcast('img_upload_add', msg);
       },
       /**
        * 接收由watermark广播的事件,然后广播道上传组件
        */
       'watermark-result':function (dataurl) {
-        var data = {}
+        var data = {};
         data.blob = util.dataURLtoBlob(dataurl);
         this.$broadcast('img_upload_add', data);
       },
