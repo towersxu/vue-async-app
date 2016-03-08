@@ -1,0 +1,212 @@
+@import '../../../static/less/color.less';
+
+.invisible{
+  visibility: hidden;
+  &.show{
+    visibility: visible;
+  }
+}
+.cropper-modal-custom{
+  position: fixed;
+  width: 750px;
+  background: @base_white;
+  top: 50%;
+  left: 50%;
+  padding: 20px 40px;
+  margin-left: -375px;
+  margin-top: -260px;
+  box-shadow: 2px 1px 20px 1px @opacity_mask;
+  border-radius: 6px;
+  .title{
+    font-size: 14px;
+    line-height: 35px;
+    color: @font_grey_1;
+    margin: 0;
+    border-bottom: 2px solid @red;
+  }
+  .content{
+    padding-top: 25px;
+    .img-container{
+      width: 320px;
+      height: 180px;
+      display: table-cell;
+      &.NorthWest{
+        vertical-align:top;
+        text-align:left;
+      }
+      &.North{
+        vertical-align:top;
+        text-align:center;
+      }
+      &.NorthEast{
+        vertical-align:top;
+        text-align:right;
+      }
+      &.West{
+        vertical-align:middle;
+        text-align:left;
+      }
+      &.Center{
+        vertical-align:middle;
+        text-align:center;
+      }
+      &.East{
+        vertical-align:middle;
+        text-align:right;
+      }
+      &.SouthWest{
+        vertical-align:bottom;
+        text-align:left;
+      }
+      &.South{
+        vertical-align:bottom;
+        text-align:center;
+      }
+      &.SouthEast{
+        vertical-align:bottom;
+        text-align:right;
+      }
+      img{
+        max-width: 100px;
+        max-height: 100px;
+      }
+    }
+  }
+  .img-wrap{
+    width: 320px;
+    height: 180px;
+    background: @base_black;
+    float: left;
+  }
+  .img-info{
+    width: 300px;
+    float: left;
+    margin-left: 50px;
+    .upload-btn{
+      width: 190px;
+      height: 26px;
+      background: @font_blue;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 26px;
+      cursor: pointer;
+      float: left;
+      span{
+        line-height: 28px;
+        vertical-align: middle;
+        font-size: 12px;
+        color: @base_white;
+      }
+    }
+    .history-btn{
+      position: relative;
+      margin-left: 10px;
+      float: left;
+      .history-items{
+        position: absolute;
+        right: 0;
+        top: 32px;
+        width: 170px;
+        font-size: 12px;
+        background: @base_white;
+        border: 1px solid @grey_border_2;
+        box-shadow: 0 0 5px 2px @opacity_mask_1;
+        color: @font_grey_3;
+        padding: 8px 0;
+        z-index: 2;
+        .arrow{
+          &.up{
+            top: -7px;
+            left: 75%;
+          }
+        }
+        .item{
+          padding: 0 10px;
+          height: 24px;
+          line-height: 24px;
+          cursor: pointer;
+          &:hover{
+            background: @red;
+            color: @base_white;
+          }
+        }
+        .custom-item{
+          height: 24px;
+          width: 130px;
+          overflow: hidden;
+          display: inline-block;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+    .tip{
+      font-size: 12px;
+      color: @font_grey_1;
+      margin: 36px 0 8px 0;
+    }
+  }
+  .btn-wrap{
+    clear: both;
+    text-align: center;
+    padding-top: 30px;
+    .btn-red2{
+      display: inline-block;
+    }
+    .btn-cancel{
+      font-size: 12px;
+      color: @font_grey_1;
+      margin-left: 10px;
+    }
+  }
+  .watermark-setting{
+    .select-input{
+      float: left;
+      margin-top: 10px;
+      &.ml30{
+        margin-left: 30px;
+      }
+    }
+    .select-box{
+      .select-options{
+        top: -50px;
+        background: @base_white;
+        border: 1px solid @grey_border;
+        box-shadow: 2px 1px 20px 1px @opacity_mask;
+        &.t25{
+          top: -25px;
+        }
+        .option{
+          &:hover:before{
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  .watermark-name{
+    font-size: 12px;
+    color: @font_grey;
+    margin-top: 15px;
+    position: relative;
+    .name-input{
+      height: 26px;
+      border: 1px solid @grey_border;
+      border-radius: 4px;
+      width: 268px;
+      text-indent: 10px;
+      position: relative;
+      z-index: 1;
+      background: transparent;
+    }
+    .watermark-tips{
+      position: absolute;
+      top: 5px;
+      margin: 0;
+      left: 50px;
+      span{
+        color: @red_linear_2;
+      }
+    }
+  }
+}

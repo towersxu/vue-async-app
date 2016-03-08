@@ -84,7 +84,7 @@
   </div>
   <div class="modal statement-panel animated" v-show="showSmp" transition="fade">
     <div class="block close sp i105" v-on:click.stop="closeModal()"></div>
-    <div class="head">
+    <div class="modal-title">
       <h2>声明与承诺</h2>
     </div>
     <div class="content">

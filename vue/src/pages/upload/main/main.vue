@@ -222,7 +222,7 @@
                   <div class="select-options">
                     <div class="option">- 不添加 -</div>
                     <div class="option">添加文字水印</div>
-                    <div class="option selected">添加图片水印</div>
+                    <div class="option selected" v-on:click="showWatermark()">添加图片水印</div>
                   </div>
                   <div class="select-icon">
                     <i class="sp i2 block"></i>
@@ -296,11 +296,11 @@
     </div>
     <cropper></cropper>
     <re-choose></re-choose>
+    <watermark></watermark>
   </div>
 
 </template>
 <script>
-  var Vue = require('vue');
   var editor = require('../../../components/ckeditor/ckeditor.vue');
   var select = require('../select/select.vue');
   var upload = require('../../../components/qn_upload/qnupload.vue');
@@ -308,6 +308,7 @@
   var reChoose = require('./re-choose/re-choose.vue');
   var util = require('../../../util/util.js');
   var filter = require('../../../filters/trans.js');
+  var watermark = require('../watermark/watermark.vue');
   /**
    * module upload-get-width
    * des 在动态添加标签时,将标签显示在输入框上,同时修改输入框的indent
@@ -442,6 +443,12 @@
         this.upFiles = [];
         this.isUploading = false;
         this.isUploadingSuccess = false;
+      },
+      /**
+       * 显示图片水印选择器
+       */
+      showWatermark: function(){
+        this.$broadcast('show_watermark');
       }
     },
     components: {
@@ -449,7 +456,8 @@
       selectAdd: select,
       upload: upload,
       cropper:cropper,
-      reChoose:reChoose
+      reChoose:reChoose,
+      watermark:watermark
     },
     events: {
       /**
@@ -512,6 +520,14 @@
         msg.id=this.upFiles[msg.idx].id;   //id将作为图片文件的名字.
         msg.blob=util.dataURLtoBlob(msg.dataurl);
         this.$broadcast('add-file', msg);
+      },
+      /**
+       * 接收由watermark广播的事件,然后广播道上传组件
+       */
+      'watermark-result':function (dataurl) {
+        var data = {}
+        data.blob = util.dataURLtoBlob(dataurl);
+        this.$broadcast('img_upload_add', data);
       },
       /**
        * upload-complete 监听上传完成事件

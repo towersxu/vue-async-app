@@ -5,7 +5,12 @@
       <span>点击添加作品</span>
     </div>
   </div>
-
+  <div id="qnupload-container2" class="btn btn-red upload-add-btn hidden" >
+    <div  id="qnupload-btn2" class="">
+      <i class="block sp i141"></i>
+      <span>点击添加作品</span>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,7 +22,8 @@
     data:function(){
       return {
         files:[],
-        uploader:{}
+        uploader:{},        //视频上传uploader
+        uploader2:{}        //图片上传uploader
       }
     },
     events:{
@@ -53,6 +59,15 @@
             this.uploader.removeFile(files[i]);
           }
         }
+      },
+      /**
+       * 上传图片到空间中
+       */
+      img_upload_add:function(data){
+        console.log(this.uploader2);
+        console.log(this.uploader);
+        this.uploader2.addFile(data.blob);
+        console.log(this.uploader2);
       }
     },
     ready:function(){
@@ -69,17 +84,7 @@
         uptoken_url: '/v/uptoken',
         domain: 'http://7xqjp2.com1.z0.glb.clouddn.com',
         get_new_uptoken: false,
-        // downtoken_url: '/downtoken',
         unique_names: false,
-        // save_key: true,
-        // x_vars: {
-        //     'id': '1234',
-        //     'time': function(up, file) {
-        //         var time = (new Date()).getTime();
-        //         // do something with 'time'
-        //         return time;
-        //     },
-        // },
         auto_start: false,
         log_level: 5,
         init: {
@@ -98,7 +103,6 @@
                     up.removeFile(up.getFile(file.coverImageId));
                   }
                   file.coverImageId = files[i].id;
-//                  self.$dispatch('cover-add',file);
                   coverAddFlag = true;
                 }
               } else {  //不是图片,则表示不是封面,将不是视频的文件移除上传队列.
@@ -111,18 +115,6 @@
             }
             console.log('file-added...........');
           },
-//          'FilesRemoved':function(up,files){
-//            console.log('file-removed...........');
-//            self.$dispatch('file-removed',files);
-//          },
-//          'QueueChanged':function(upload){
-//            self.$dispatch('file_queue_change',upload.files);  //添加视频后,通知父组件
-//          },
-//          'BeforeUpload': function(up, file) {
-//          },
-//          'UploadProgress': function(up, file) {
-//
-//          },
           'UploadComplete': function() {
             self.$dispatch('upload-complete');  //上传完成后,通知父组件
 
@@ -130,14 +122,43 @@
           'FileUploaded': function(up, file, info) {
 
           }
-//          'Error': function(up, err, errTip) {
-//          }
-          // ,
-          // 'Key': function(up, file) {
-          //     var key = "";
-          //     // do something with key
-          //     return key
-          // }
+        }
+      });
+      /**
+       * 新增一个Qiniu对象.
+       */
+      self.uploader2 = (new QiniuJsSDK()).uploader({
+        runtimes: 'html5,flash,html4',
+        browse_button: 'qnupload-btn2',
+        container: 'qnupload-container2',
+        drop_element: 'container2',
+        max_file_size: '1000gb',
+        flash_swf_url: './Moxie.swf',
+        dragdrop: true,
+        chunk_size: '4mb',
+        uptoken_url: '/v/upimgtoken',
+        domain: 'http://7xqjp2.com1.z0.glb.clouddn.com',
+        get_new_uptoken: false,
+        unique_names: false,
+        auto_start: false,
+        log_level: 5,
+        init: {
+          /**
+           * @des files只有两种情况,1是在添加视频的时候,产生多个视频.这个时候
+           * @param up
+           * @param files
+           */
+          'FilesAdded': function(up, files) {
+            console.log('file-added1...........');
+            up.start();
+          },
+          'UploadComplete': function() {
+            console.log('file-added2...........');
+
+          },
+          'FileUploaded': function(up, file, info) {
+            console.log('file-added3...........');
+          }
         }
       });
     }
