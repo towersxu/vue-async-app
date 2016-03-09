@@ -85,7 +85,7 @@
                 videos:[
                   {
                     name:'720p',
-                    src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2Flv3a3j1mfcgOb4TYIF9-3K3vFL3d',
+                    src:'http://7xqjp2.com1.z0.glb.clouddn.com/V2gXjbEhXSwOCrTMZXKwYd_5-X4%3D%2FlqDkuRYFVokC045xBdCN2UyAqY3_',
                     type: 'application/vnd.apple.mpegurl'
                   },
                   {

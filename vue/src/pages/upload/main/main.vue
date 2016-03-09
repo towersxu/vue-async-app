@@ -221,7 +221,7 @@
                 <div class="select select-box">
                   <div class="select-options">
                     <div class="option">- 不添加 -</div>
-                    <div class="option">添加文字水印</div>
+                    <div class="option" v-on:click="showWatermarkTxt()">添加文字水印</div>
                     <div class="option selected" v-on:click="showWatermark()">添加图片水印</div>
                   </div>
                   <div class="select-icon">
@@ -449,6 +449,12 @@
        */
       showWatermark: function(){
         this.$broadcast('show_watermark');
+      },
+      /**
+       * 显示文字水印
+       */
+      showWatermarkTxt: function(){
+        this.$broadcast('show_watermark_txt')
       }
     },
     components: {
