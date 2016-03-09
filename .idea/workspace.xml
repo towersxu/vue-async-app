@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3f2f1b0c-587f-4c0d-8547-79bff6c3126d" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/crossdomain.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/animate-0fc518fa63.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/base-0755b00d01.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/color-d41d8cd98f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/films-8b11b01c61.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/home-2f264b37bd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/items-33c40e54e8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/main-b75354fc9f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/normalize-db1aae18a5.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/pagination-f1b59b3f44.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/play-d7ae050373.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/rev/rev-manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/sprite-f1a44aeb45.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/style-e1505ab8ae.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/TOC.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/css.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/extend.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/faq.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/html.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/js.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/doc/usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/films.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/humans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/A7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B8 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B8 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B8 (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B9 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B9 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/B9 (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/C1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/C2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/CSS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/E1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/F1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/F2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/F31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/F32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/F4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/G1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/G2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/score100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/score25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/score50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/score75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/films.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/play.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/jquery-1.12.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/vendor/video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/animate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/base.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/color.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/films.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/home.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/items.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/main.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/play.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/sprite.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/less/style.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/m3u8/1080.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/m3u8/2K.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/m3u8/480.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/m3u8/720.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/m3u8/playlist.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/play.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/alt/video.novtt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/alt/video.novtt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/alt/video.novtt.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/font/VideoJS.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/font/VideoJS.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/font/VideoJS.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/font/VideoJS.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/ie8/videojs-ie8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/ie8/videojs-ie8.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ba.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/lang/zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/video.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/plugin/videojs/videojs.hls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/tile-wide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/tile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jsdoc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/crossdomain.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/animate.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/color.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/films.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/items.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/main.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/pagination.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/play.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/sprite.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/TOC.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/css.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/extend.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/faq.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/html.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/js.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/misc.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/doc/usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/films.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/humans.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/A7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B8 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B8 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B8 (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B9 (1).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B9 (2).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/B9 (3).jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/C1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/C2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/CSS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/E1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/F1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/F2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/F31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/F32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/F4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/G1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/G2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/score100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/score25.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/score50.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/score75.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/films.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/play.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/vendor/modernizr-2.8.3.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/vendor/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/vendor/video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/animate.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/base.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/color.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/films.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/home.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/items.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/normalize.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/play.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/sprite.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/less/style.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/m3u8/1080.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/m3u8/2K.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/m3u8/480.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/m3u8/720.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/m3u8/playlist.m3u8" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/play.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/alt/video.novtt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/alt/video.novtt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/alt/video.novtt.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/font/VideoJS.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/font/VideoJS.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/font/VideoJS.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/font/VideoJS.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/ie8/videojs-ie8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/ie8/videojs-ie8.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ba.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/lang/zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video-js.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video-js.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video-js.swf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/video.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/plugin/videojs/videojs.hls.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tile-wide.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/file_content.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/file_existence.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/.eslintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/build/app.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vue/webpack.production.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/0862ced2c366bc05cc0702c6a941d8c1.png" afterPath="$PROJECT_DIR$/build/0862ced2c366bc05cc0702c6a941d8c1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/098f710d385a222437b3d2e4564eddf2.jpg" afterPath="$PROJECT_DIR$/build/098f710d385a222437b3d2e4564eddf2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/1.bundle.js" afterPath="$PROJECT_DIR$/build/1.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/2.bundle.js" afterPath="$PROJECT_DIR$/build/2.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/255a1b1d4cd3eb175700173ce5e10003.jpg" afterPath="$PROJECT_DIR$/build/255a1b1d4cd3eb175700173ce5e10003.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/3.bundle.js" afterPath="$PROJECT_DIR$/build/3.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/3b27e1f29a3e6b664d8c522b2af28743.jpg" afterPath="$PROJECT_DIR$/build/3b27e1f29a3e6b664d8c522b2af28743.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/3fe271c23634e7d1be1152b1448b3c4f.eot" afterPath="$PROJECT_DIR$/build/3fe271c23634e7d1be1152b1448b3c4f.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/4.bundle.js" afterPath="$PROJECT_DIR$/build/4.bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/430b3226b098d536187245ff3ee2ba15.png" afterPath="$PROJECT_DIR$/build/430b3226b098d536187245ff3ee2ba15.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/5975c70ccc555c2573532957c824a653.jpg" afterPath="$PROJECT_DIR$/build/5975c70ccc555c2573532957c824a653.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/6a64e236f85154645035be960b35a5d6.png" afterPath="$PROJECT_DIR$/build/6a64e236f85154645035be960b35a5d6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/840435937d362419d1a2870f7d2add9b.jpg" afterPath="$PROJECT_DIR$/build/840435937d362419d1a2870f7d2add9b.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/8520a3c8853b8184f672c15597d628c7.jpg" afterPath="$PROJECT_DIR$/build/8520a3c8853b8184f672c15597d628c7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/937c058a97ffbc5ff516b3469df78891.png" afterPath="$PROJECT_DIR$/build/937c058a97ffbc5ff516b3469df78891.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/b79ffe641fafe244a38c5fea54de67aa.jpg" afterPath="$PROJECT_DIR$/build/b79ffe641fafe244a38c5fea54de67aa.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/c30b9b0055492ad76275be32aaea3b24.png" afterPath="$PROJECT_DIR$/build/c30b9b0055492ad76275be32aaea3b24.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/e160414d4d86ae51ab0b2488fa233791.jpg" afterPath="$PROJECT_DIR$/build/e160414d4d86ae51ab0b2488fa233791.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/build/fa84f5572c12db8a24be097b44ee8e87.jpg" afterPath="$PROJECT_DIR$/build/fa84f5572c12db8a24be097b44ee8e87.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/CHANGES.md" afterPath="$PROJECT_DIR$/ckeditor/CHANGES.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/LICENSE.md" afterPath="$PROJECT_DIR$/ckeditor/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/README.md" afterPath="$PROJECT_DIR$/ckeditor/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/a.txt" afterPath="$PROJECT_DIR$/ckeditor/a.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/adapters/jquery.js" afterPath="$PROJECT_DIR$/ckeditor/adapters/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/build-config.js" afterPath="$PROJECT_DIR$/ckeditor/build-config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/ckeditor.js" afterPath="$PROJECT_DIR$/ckeditor/ckeditor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/ckeditor.vue" afterPath="$PROJECT_DIR$/ckeditor/ckeditor.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/config.js" afterPath="$PROJECT_DIR$/ckeditor/config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/contents.css" afterPath="$PROJECT_DIR$/ckeditor/contents.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/lang/en.js" afterPath="$PROJECT_DIR$/ckeditor/lang/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/lang/zh-cn.js" afterPath="$PROJECT_DIR$/ckeditor/lang/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/lang/zh.js" afterPath="$PROJECT_DIR$/ckeditor/lang/zh.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/about/dialogs/about.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/about.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/about/dialogs/logo_ckeditor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/clipboard/dialogs/paste.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/clipboard/dialogs/paste.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/dialog/dialogDefinition.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/dialog/dialogDefinition.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/icons.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/icons_hidpi.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons_hidpi.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/link/dialogs/anchor.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/dialogs/anchor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/link/dialogs/link.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/dialogs/link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/link/images/anchor.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/images/anchor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/link/images/hidpi/anchor.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/link/images/hidpi/anchor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/.gitignore" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/CHANGELOG.md" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/LICENSE" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/README.md" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/dialogs/PBSyntaxHighlighter.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/dialogs/PBSyntaxHighlighter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/dialogs/pbckcode.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/dialogs/pbckcode.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/pbckcode/dialogs/style.css" afterPath="$PROJECT_DIR$/ckeditor/plugins/pbckcode/dialogs/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/dialogs/smiley.js" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/dialogs/smiley.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/angel_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/angel_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/angry_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/angry_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/broken_heart.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/broken_heart.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/confused_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/confused_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/cry_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/cry_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/devil_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/devil_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/embaressed_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embaressed_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/embarrassed_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/embarrassed_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/envelope.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/envelope.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/heart.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/heart.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/kiss.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/kiss.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/lightbulb.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/lightbulb.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/omg_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/omg_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/regular_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/regular_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/sad_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/sad_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/shades_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/shades_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/teeth_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/teeth_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/thumbs_down.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/thumbs_down.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/thumbs_up.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/thumbs_up.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/tongue_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/tongue_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/tounge_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tounge_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/wink_smile.gif" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/plugins/smiley/images/wink_smile.png" afterPath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/css/samples.css" afterPath="$PROJECT_DIR$/ckeditor/samples/css/samples.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/img/github-top.png" afterPath="$PROJECT_DIR$/ckeditor/samples/img/github-top.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/img/header-bg.png" afterPath="$PROJECT_DIR$/ckeditor/samples/img/header-bg.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/img/header-separator.png" afterPath="$PROJECT_DIR$/ckeditor/samples/img/header-separator.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/img/logo.png" afterPath="$PROJECT_DIR$/ckeditor/samples/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/img/navigation-tip.png" afterPath="$PROJECT_DIR$/ckeditor/samples/img/navigation-tip.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/index.html" afterPath="$PROJECT_DIR$/ckeditor/samples/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/js/sample.js" afterPath="$PROJECT_DIR$/ckeditor/samples/js/sample.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/js/sf.js" afterPath="$PROJECT_DIR$/ckeditor/samples/js/sf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/ajax.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/ajax.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/api.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/api.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/appendto.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/appendto.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/assets/inlineall/logo.png" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/inlineall/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/assets/posteddata.php" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/posteddata.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/assets/sample.jpg" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/sample.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/assets/uilanguages/languages.js" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/uilanguages/languages.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/datafiltering.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/datafiltering.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/dialog/assets/my_dialog.js" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/assets/my_dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/dialog/dialog.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/dialog.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/divreplace.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/divreplace.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/enterkey/enterkey.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/enterkey/enterkey.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/index.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/inlineall.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlineall.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/inlinebycode.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinebycode.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/inlinetextarea.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinetextarea.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/jquery.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/jquery.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/readonly.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/readonly.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/replacebyclass.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebyclass.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/replacebycode.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebycode.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/sample.css" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/sample.js" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/sample_posteddata.php" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample_posteddata.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/tabindex.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/tabindex.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/toolbar/toolbar.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/toolbar/toolbar.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/uicolor.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uicolor.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/uilanguages.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uilanguages.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/wysiwygarea/fullpage.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/wysiwygarea/fullpage.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/old/xhtmlstyle.html" afterPath="$PROJECT_DIR$/ckeditor/samples/old/xhtmlstyle.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/css/fontello.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/config.json" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/fontello.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/index.html" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/dialog.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/dialog.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/dialog_ie.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/dialog_ie.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/dialog_ie7.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/dialog_ie7.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/dialog_ie8.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/dialog_ie8.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/dialog_iequirks.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/dialog_iequirks.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor_gecko.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor_gecko.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor_ie.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor_ie.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor_ie7.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor_ie7.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor_ie8.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor_ie8.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/editor_iequirks.css" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/editor_iequirks.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/icons.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/icons.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/icons_hidpi.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/icons_hidpi.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/arrow.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/arrow.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/close.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/close.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/hidpi/close.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/hidpi/close.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/hidpi/lock-open.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/hidpi/lock-open.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/hidpi/lock.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/hidpi/lock.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/hidpi/refresh.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/hidpi/refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/lock-open.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/lock-open.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/lock.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/lock.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/images/refresh.png" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/images/refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/skins/flat/readme.md" afterPath="$PROJECT_DIR$/ckeditor/skins/flat/readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/ckeditor/styles.js" afterPath="$PROJECT_DIR$/ckeditor/styles.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/app.vue" afterPath="$PROJECT_DIR$/src/app.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/ckeditor/ckeditor.vue" afterPath="$PROJECT_DIR$/src/components/ckeditor/ckeditor.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/cropper/cropper.css" afterPath="$PROJECT_DIR$/src/components/cropper/cropper.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/cropper/cropper.js" afterPath="$PROJECT_DIR$/src/components/cropper/cropper.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/cropper/cropper.vue" afterPath="$PROJECT_DIR$/src/components/cropper/cropper.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/cropper/custom.less" afterPath="$PROJECT_DIR$/src/components/cropper/custom.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/cropper/vbg.jpg" afterPath="$PROJECT_DIR$/src/components/cropper/vbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/footer/footer.vue" afterPath="$PROJECT_DIR$/src/components/footer/footer.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/header/gaia-header.vue" afterPath="$PROJECT_DIR$/src/components/header/gaia-header.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/mask/mask.vue" afterPath="$PROJECT_DIR$/src/components/mask/mask.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/modal/img/A2.jpg" afterPath="$PROJECT_DIR$/src/components/modal/img/A2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/modal/user-modal.vue" afterPath="$PROJECT_DIR$/src/components/modal/user-modal.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/navigation/navigation.vue" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/Moxie.swf" afterPath="$PROJECT_DIR$/src/components/qn_upload/Moxie.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/Moxie.xap" afterPath="$PROJECT_DIR$/src/components/qn_upload/Moxie.xap" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/moxie.js" afterPath="$PROJECT_DIR$/src/components/qn_upload/moxie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/plupload.dev.js" afterPath="$PROJECT_DIR$/src/components/qn_upload/plupload.dev.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/qiniu.js" afterPath="$PROJECT_DIR$/src/components/qn_upload/qiniu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.less" afterPath="$PROJECT_DIR$/src/components/qn_upload/qnupload.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/qn_upload/qnupload.vue" afterPath="$PROJECT_DIR$/src/components/qn_upload/qnupload.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/alt/video.novtt.js" afterPath="$PROJECT_DIR$/src/components/video-js/alt/video.novtt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/alt/video.novtt.min.js" afterPath="$PROJECT_DIR$/src/components/video-js/alt/video.novtt.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/alt/video.novtt.min.js.map" afterPath="$PROJECT_DIR$/src/components/video-js/alt/video.novtt.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/font/VideoJS.eot" afterPath="$PROJECT_DIR$/src/components/video-js/font/VideoJS.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/font/VideoJS.svg" afterPath="$PROJECT_DIR$/src/components/video-js/font/VideoJS.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/font/VideoJS.ttf" afterPath="$PROJECT_DIR$/src/components/video-js/font/VideoJS.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/font/VideoJS.woff" afterPath="$PROJECT_DIR$/src/components/video-js/font/VideoJS.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/ie8/videojs-ie8.js" afterPath="$PROJECT_DIR$/src/components/video-js/ie8/videojs-ie8.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/ie8/videojs-ie8.min.js" afterPath="$PROJECT_DIR$/src/components/video-js/ie8/videojs-ie8.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/img/B3.jpg" afterPath="$PROJECT_DIR$/src/components/video-js/img/B3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/img/demo.png" afterPath="$PROJECT_DIR$/src/components/video-js/img/demo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ar.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ba.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ba.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/bg.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ca.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/cs.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/da.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/de.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/es.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/fi.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/fr.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/hr.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/hu.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/it.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ja.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ko.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/nb.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/nl.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/nn.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/nn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/pt-BR.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/pt-BR.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/ru.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/sr.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/sr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/sv.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/tr.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/uk.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/vi.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/zh-CN.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/zh-CN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/lang/zh-TW.js" afterPath="$PROJECT_DIR$/src/components/video-js/lang/zh-TW.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/min-video.vue" afterPath="$PROJECT_DIR$/src/components/video-js/min-video.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/modernizr.js" afterPath="$PROJECT_DIR$/src/components/video-js/modernizr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/this.js" afterPath="$PROJECT_DIR$/src/components/video-js/this.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/video-js.css" afterPath="$PROJECT_DIR$/src/components/video-js/video-js.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/video-js.swf" afterPath="$PROJECT_DIR$/src/components/video-js/video-js.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/video.js" afterPath="$PROJECT_DIR$/src/components/video-js/video.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/video.vue" afterPath="$PROJECT_DIR$/src/components/video-js/video.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/components/video-js/videojs.hls.js" afterPath="$PROJECT_DIR$/src/components/video-js/videojs.hls.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/filters/trans.js" afterPath="$PROJECT_DIR$/src/filters/trans.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/films/films.vue" afterPath="$PROJECT_DIR$/src/pages/films/films.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/films/list/A3.jpg" afterPath="$PROJECT_DIR$/src/pages/films/list/A3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/films/list/A7.jpg" afterPath="$PROJECT_DIR$/src/pages/films/list/A7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/films/list/list.vue" afterPath="$PROJECT_DIR$/src/pages/films/list/list.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/academy/A5.jpg" afterPath="$PROJECT_DIR$/src/pages/home/academy/A5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/academy/academy.vue" afterPath="$PROJECT_DIR$/src/pages/home/academy/academy.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/ad/A2.jpg" afterPath="$PROJECT_DIR$/src/pages/home/ad/A2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/ad/ad.vue" afterPath="$PROJECT_DIR$/src/pages/home/ad/ad.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/ad_bottom/A7.jpg" afterPath="$PROJECT_DIR$/src/pages/home/ad_bottom/A7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/ad_bottom/ad.vue" afterPath="$PROJECT_DIR$/src/pages/home/ad_bottom/ad.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/banner/banner.vue" afterPath="$PROJECT_DIR$/src/pages/home/banner/banner.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/home.vue" afterPath="$PROJECT_DIR$/src/pages/home/home.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/material/A3.jpg" afterPath="$PROJECT_DIR$/src/pages/home/material/A3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/material/A4.jpg" afterPath="$PROJECT_DIR$/src/pages/home/material/A4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/material/material.vue" afterPath="$PROJECT_DIR$/src/pages/home/material/material.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/recomment/A3.jpg" afterPath="$PROJECT_DIR$/src/pages/home/recomment/A3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/home/recomment/recom.vue" afterPath="$PROJECT_DIR$/src/pages/home/recomment/recom.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/B3.jpg" afterPath="$PROJECT_DIR$/src/pages/player/main/B3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/F2.jpg" afterPath="$PROJECT_DIR$/src/pages/player/main/F2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/F31.jpg" afterPath="$PROJECT_DIR$/src/pages/player/main/F31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/alt/video.novtt.js" afterPath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/alt/video.novtt.min.js" afterPath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/alt/video.novtt.min.js.map" afterPath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/font/VideoJS.eot" afterPath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/font/VideoJS.svg" afterPath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/font/VideoJS.ttf" afterPath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/font/VideoJS.woff" afterPath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/ie8/videojs-ie8.js" afterPath="$PROJECT_DIR$/src/pages/player/main/ie8/videojs-ie8.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/ie8/videojs-ie8.min.js" afterPath="$PROJECT_DIR$/src/pages/player/main/ie8/videojs-ie8.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/img/B3.jpg" afterPath="$PROJECT_DIR$/src/pages/player/main/img/B3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/img/demo.png" afterPath="$PROJECT_DIR$/src/pages/player/main/img/demo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ar.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ba.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ba.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/bg.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ca.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/cs.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/da.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/de.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/es.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/fi.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/fr.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/hr.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/hu.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/it.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ja.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ko.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/nb.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/nl.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/nn.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/nn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/pt-BR.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/pt-BR.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/ru.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/sr.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/sr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/sv.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/tr.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/uk.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/vi.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/zh-CN.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/zh-CN.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/lang/zh-TW.js" afterPath="$PROJECT_DIR$/src/pages/player/main/lang/zh-TW.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/main.vue" afterPath="$PROJECT_DIR$/src/pages/player/main/main.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/modernizr.js" afterPath="$PROJECT_DIR$/src/pages/player/main/modernizr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/video-js.css" afterPath="$PROJECT_DIR$/src/pages/player/main/video-js.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/video-js.swf" afterPath="$PROJECT_DIR$/src/pages/player/main/video-js.swf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/video.js" afterPath="$PROJECT_DIR$/src/pages/player/main/video.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/main/videojs.hls.js" afterPath="$PROJECT_DIR$/src/pages/player/main/videojs.hls.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/player/player.vue" afterPath="$PROJECT_DIR$/src/pages/player/player.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/B4.jpg" afterPath="$PROJECT_DIR$/src/pages/upload/main/B4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/main.less" afterPath="$PROJECT_DIR$/src/pages/upload/main/main.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/main.vue" afterPath="$PROJECT_DIR$/src/pages/upload/main/main.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re-choose.vue" afterPath="$PROJECT_DIR$/src/pages/upload/main/re-choose/re-choose.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/re-choose/re.less" afterPath="$PROJECT_DIR$/src/pages/upload/main/re-choose/re.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/upbg.jpg" afterPath="$PROJECT_DIR$/src/pages/upload/main/upbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/main/vbg.jpg" afterPath="$PROJECT_DIR$/src/pages/upload/main/vbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/select/select.vue" afterPath="$PROJECT_DIR$/src/pages/upload/select/select.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/upload.vue" afterPath="$PROJECT_DIR$/src/pages/upload/upload.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/watermark/custom.less" afterPath="$PROJECT_DIR$/src/pages/upload/watermark/custom.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/watermark/star.png" afterPath="$PROJECT_DIR$/src/pages/upload/watermark/star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/watermark/vbg.jpg" afterPath="$PROJECT_DIR$/src/pages/upload/watermark/vbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/pages/upload/watermark/watermark.vue" afterPath="$PROJECT_DIR$/src/pages/upload/watermark/watermark.vue" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/.gitignore" afterPath="$PROJECT_DIR$/src/static/img/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A1.jpg" afterPath="$PROJECT_DIR$/src/static/img/A1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A2.jpg" afterPath="$PROJECT_DIR$/src/static/img/A2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A3.jpg" afterPath="$PROJECT_DIR$/src/static/img/A3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A4.jpg" afterPath="$PROJECT_DIR$/src/static/img/A4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A5.jpg" afterPath="$PROJECT_DIR$/src/static/img/A5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/A7.jpg" afterPath="$PROJECT_DIR$/src/static/img/A7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B1.jpg" afterPath="$PROJECT_DIR$/src/static/img/B1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B2.jpg" afterPath="$PROJECT_DIR$/src/static/img/B2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B3.jpg" afterPath="$PROJECT_DIR$/src/static/img/B3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B4.jpg" afterPath="$PROJECT_DIR$/src/static/img/B4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B5.jpg" afterPath="$PROJECT_DIR$/src/static/img/B5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B6.jpg" afterPath="$PROJECT_DIR$/src/static/img/B6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B7.jpg" afterPath="$PROJECT_DIR$/src/static/img/B7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B8 (1).jpg" afterPath="$PROJECT_DIR$/src/static/img/B8 (1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B8 (2).jpg" afterPath="$PROJECT_DIR$/src/static/img/B8 (2).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B8 (3).jpg" afterPath="$PROJECT_DIR$/src/static/img/B8 (3).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B9 (1).jpg" afterPath="$PROJECT_DIR$/src/static/img/B9 (1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B9 (2).jpg" afterPath="$PROJECT_DIR$/src/static/img/B9 (2).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/B9 (3).jpg" afterPath="$PROJECT_DIR$/src/static/img/B9 (3).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/C1.jpg" afterPath="$PROJECT_DIR$/src/static/img/C1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/C2.jpg" afterPath="$PROJECT_DIR$/src/static/img/C2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/CSS.txt" afterPath="$PROJECT_DIR$/src/static/img/CSS.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/E1.jpg" afterPath="$PROJECT_DIR$/src/static/img/E1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/F1.jpg" afterPath="$PROJECT_DIR$/src/static/img/F1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/F2.jpg" afterPath="$PROJECT_DIR$/src/static/img/F2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/F31.jpg" afterPath="$PROJECT_DIR$/src/static/img/F31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/F32.jpg" afterPath="$PROJECT_DIR$/src/static/img/F32.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/F4.jpg" afterPath="$PROJECT_DIR$/src/static/img/F4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/G1.jpg" afterPath="$PROJECT_DIR$/src/static/img/G1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/G2.jpg" afterPath="$PROJECT_DIR$/src/static/img/G2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/left-rotate.png" afterPath="$PROJECT_DIR$/src/static/img/left-rotate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/reset.png" afterPath="$PROJECT_DIR$/src/static/img/reset.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/right-rotate.png" afterPath="$PROJECT_DIR$/src/static/img/right-rotate.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/score100.png" afterPath="$PROJECT_DIR$/src/static/img/score100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/score25.png" afterPath="$PROJECT_DIR$/src/static/img/score25.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/score50.png" afterPath="$PROJECT_DIR$/src/static/img/score50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/score75.png" afterPath="$PROJECT_DIR$/src/static/img/score75.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/sprites.png" afterPath="$PROJECT_DIR$/src/static/img/sprites.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/sprites1.png" afterPath="$PROJECT_DIR$/src/static/img/sprites1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/upbg.jpg" afterPath="$PROJECT_DIR$/src/static/img/upbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/img/vbg.jpg" afterPath="$PROJECT_DIR$/src/static/img/vbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/animate.less" afterPath="$PROJECT_DIR$/src/static/less/animate.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/base.less" afterPath="$PROJECT_DIR$/src/static/less/base.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/color.less" afterPath="$PROJECT_DIR$/src/static/less/color.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/films.less" afterPath="$PROJECT_DIR$/src/static/less/films.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/home.less" afterPath="$PROJECT_DIR$/src/static/less/home.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/items.less" afterPath="$PROJECT_DIR$/src/static/less/items.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/main.less" afterPath="$PROJECT_DIR$/src/static/less/main.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/normalize.less" afterPath="$PROJECT_DIR$/src/static/less/normalize.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/pagination.less" afterPath="$PROJECT_DIR$/src/static/less/pagination.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/play.less" afterPath="$PROJECT_DIR$/src/static/less/play.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/sprite.less" afterPath="$PROJECT_DIR$/src/static/less/sprite.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/static/less/style.less" afterPath="$PROJECT_DIR$/src/static/less/style.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/src/util/util.js" afterPath="$PROJECT_DIR$/src/util/util.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/.gitignore" afterPath="$PROJECT_DIR$/static/img/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A1.jpg" afterPath="$PROJECT_DIR$/static/img/A1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A2.jpg" afterPath="$PROJECT_DIR$/static/img/A2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A3.jpg" afterPath="$PROJECT_DIR$/static/img/A3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A4.jpg" afterPath="$PROJECT_DIR$/static/img/A4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A5.jpg" afterPath="$PROJECT_DIR$/static/img/A5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/A7.jpg" afterPath="$PROJECT_DIR$/static/img/A7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B1.jpg" afterPath="$PROJECT_DIR$/static/img/B1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B2.jpg" afterPath="$PROJECT_DIR$/static/img/B2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B3.jpg" afterPath="$PROJECT_DIR$/static/img/B3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B4.jpg" afterPath="$PROJECT_DIR$/static/img/B4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B5.jpg" afterPath="$PROJECT_DIR$/static/img/B5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B6.jpg" afterPath="$PROJECT_DIR$/static/img/B6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B7.jpg" afterPath="$PROJECT_DIR$/static/img/B7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B8 (1).jpg" afterPath="$PROJECT_DIR$/static/img/B8 (1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B8 (2).jpg" afterPath="$PROJECT_DIR$/static/img/B8 (2).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B8 (3).jpg" afterPath="$PROJECT_DIR$/static/img/B8 (3).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B9 (1).jpg" afterPath="$PROJECT_DIR$/static/img/B9 (1).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B9 (2).jpg" afterPath="$PROJECT_DIR$/static/img/B9 (2).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/B9 (3).jpg" afterPath="$PROJECT_DIR$/static/img/B9 (3).jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/C1.jpg" afterPath="$PROJECT_DIR$/static/img/C1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/C2.jpg" afterPath="$PROJECT_DIR$/static/img/C2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/CSS.txt" afterPath="$PROJECT_DIR$/static/img/CSS.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/E1.jpg" afterPath="$PROJECT_DIR$/static/img/E1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/F1.jpg" afterPath="$PROJECT_DIR$/static/img/F1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/F2.jpg" afterPath="$PROJECT_DIR$/static/img/F2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/F31.jpg" afterPath="$PROJECT_DIR$/static/img/F31.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/F32.jpg" afterPath="$PROJECT_DIR$/static/img/F32.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/F4.jpg" afterPath="$PROJECT_DIR$/static/img/F4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/G1.jpg" afterPath="$PROJECT_DIR$/static/img/G1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/G2.jpg" afterPath="$PROJECT_DIR$/static/img/G2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/picture.jpg" afterPath="$PROJECT_DIR$/static/img/picture.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/score100.png" afterPath="$PROJECT_DIR$/static/img/score100.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/score25.png" afterPath="$PROJECT_DIR$/static/img/score25.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/score50.png" afterPath="$PROJECT_DIR$/static/img/score50.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/score75.png" afterPath="$PROJECT_DIR$/static/img/score75.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/sprites.png" afterPath="$PROJECT_DIR$/static/img/sprites.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/static/img/vbg.jpg" afterPath="$PROJECT_DIR$/static/img/vbg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/token.json" afterPath="$PROJECT_DIR$/token.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/wds.js" afterPath="$PROJECT_DIR$/wds.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/vue/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.min.css" afterPath="$PROJECT_DIR$/build/app.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.production.js" afterPath="$PROJECT_DIR$/webpack.production.js" />
+    </list>
+    <ignored path="gaia.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="gaia" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vue/src/pages/home/recomment/recom.vue" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/main/main.vue" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/watermark/custom.less" />
+        <option value="$PROJECT_DIR$/vue/src/pages/upload/watermark/watermark.vue" />
+        <option value="$PROJECT_DIR$/vue/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="editor.config.accepted" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="JavaScriptLanguageLevel" value="ES6" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f2f1b0c-587f-4c0d-8547-79bff6c3126d" name="Default" comment="" />
+      <created>1457488240098</created>
+      <option name="number" value="Default" />
+      <updated>1457488240098</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4643606" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24972677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
