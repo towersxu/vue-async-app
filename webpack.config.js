@@ -1,4 +1,4 @@
-var webpack = require('webpack')
+var webpack = require('webpack');
 module.exports = {
   entry: {
     app: './src/main.js'
@@ -7,15 +7,6 @@ module.exports = {
     path: './build',
     publicPath: '/build/',
     filename: 'bundle.js'
-  },
-  proxy: {
-    '/v/*':{
-      target: 'http://127.0.0.1:19110',
-      secure: false,
-      bypass: function(req, res, proxyOptions) {
-        console.log('1234');
-      }
-    }
   },
   module: {
     loaders: [
@@ -36,5 +27,19 @@ module.exports = {
       "Vue":"vue"
     })
   ],
+  devServer:{
+    hot:true,
+    inline:true,
+    proxy: {
+      '/v/*':{
+        target: 'http://127.0.0.1:19110',
+        secure: false
+      },
+      '/web/*':{
+        target: 'http://192.168.1.21:8080',
+        secure:false
+      }
+    }
+  },
   devtool: '#source-map'
 }

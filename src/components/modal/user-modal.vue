@@ -10,8 +10,8 @@
 
       <div class="input">
         <span class="i-head">名称</span>
-        <input type="text" placeholder="该昵称已被占用，换一个试试？">
-        <span class="status error"></span>
+        <input type="text" placeholder="{{regObj.usernameTip}}" v-model="regObj.username" v-bind:class="{'error':regObj.usernameError}" v-on:keyup="validateUserName()" v-on:blur="checkUserName($event)">
+        <span class="status sp i75 suc" v-show="regObj.usernameValidated"></span>
       </div>
       <div class="input">
         <span class="i-head">密码</span>
@@ -43,7 +43,7 @@
       </div>
       <div class="input">
         <span class="i-head">手机</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" >
         <span class="sel-reg" v-on:click.stop="choseRegion=true">中国大陆<i class="block sp i58 sel"></i></span>
 
         <div class="regions animated" v-show="choseRegion" transition="flipInX">
@@ -418,6 +418,13 @@
     props:['msg'],
     data: function () {
       return {
+        /**/
+        regObj:{
+          username:'',
+          usernameTip:'',
+          usernameError:false,      //输入框验证错误
+          usernameValidated:false
+        },
         isLog: false,
         isReg: false,
         showComplexity:false,  //密码复杂度
@@ -431,8 +438,6 @@
         isReset4:false,       //忘记密码-邮箱找回-2
         isReset5:false,       //忘记密码-手机找回-2
         isReset6:false,       //忘记密码-手机找回-3
-
-
         isMask: false,        //mask
         isOauth1: false,    //第三方登陆绑定新账号
         isOauth3: false    //绑定已有账号
@@ -453,7 +458,6 @@
         } else {
           throw new Error('t的值必须是数字0-1');
         }
-
       }
     },
     methods:{
@@ -488,6 +492,52 @@
           this.showPass = 'password';
         }else{
           this.showPass = 'text';
+        }
+      },
+      /**
+       * 检查用户名;绑定blur事件
+       */
+      checkUserName:function(e){
+        var username = this.regObj.username.trim();
+        if(username){
+          this.regObj.usernameError = false;
+          this.regObj.usernameTip='';
+          var self = this;
+          self.$http({
+            url:'/web/account/avb',
+            data:{
+              opr:4,
+              name:username
+            },
+            method:'POST'
+          }).then(function(res){
+            console.log(arguments);
+            if(res.data && res.data.b===1){
+              self.usernameValidated=true;
+            }else{
+              self.regObj.usernameTip = '用户名已经存在,请重新输入';
+              self.regObj.usernameError = true;
+              e.target.focus();
+            }
+          });
+        }else{
+          this.regObj.usernameTip = '用户名不能为空';
+          this.regObj.usernameError = true;
+          e.target.focus();
+        }
+      },
+      /**
+       * 检查用户名格式是否正确
+       */
+      validateUserName:function(){
+        var username = this.regObj.username.trim();
+        if(username){
+          this.regObj.usernameError = false;
+          this.regObj.usernameTip='';
+        }else{
+          this.regObj.username='';
+          this.regObj.usernameTip = '用户名不能为空';
+          this.regObj.usernameError = true;
         }
       }
     }

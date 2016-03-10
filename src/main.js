@@ -1,4 +1,5 @@
 import Vue from 'vue'
+
 import app from './app.vue'
 import film from './pages/films/films.vue'
 import home from './pages/home/home.vue'
@@ -12,6 +13,7 @@ import './static/less/animate.less'
 import './static/less/home.less'
 import './static/less/films.less'
 import './static/less/play.less'
+
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
