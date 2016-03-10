@@ -2,71 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f2f1b0c-587f-4c0d-8547-79bff6c3126d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/works_list/A3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/profile/main/B8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/profile/main/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/profile/main/main.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/pagination/pagination.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/less/profile.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/pages/profile/profile.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/works_list/worksList.vue" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/alt/video.novtt.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/font/VideoJS.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/ie8/videojs-ie8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/ie8/videojs-ie8.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/img/B3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/img/demo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ba.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/bg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ca.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/cs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/da.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/de.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/es.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/fi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/fr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/hr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/hu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/it.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ja.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ko.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/nb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/nn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/pt-BR.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/ru.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/sr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/sv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/tr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/uk.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/vi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/zh-CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/lang/zh-TW.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/video-js.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/video-js.swf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pages/player/main/videojs.hls.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/static/img/profile-bg.png" afterPath="$PROJECT_DIR$/src/static/img/profile-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/less/base.less" afterPath="$PROJECT_DIR$/src/static/less/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/less/films.less" afterPath="$PROJECT_DIR$/src/static/less/films.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/films/films.vue" afterPath="$PROJECT_DIR$/src/pages/films/films.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/header/gaia-header.vue" afterPath="$PROJECT_DIR$/src/components/header/gaia-header.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/films/list/list.vue" afterPath="$PROJECT_DIR$/src/pages/films/list/list.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/1.bundle.js" afterPath="$PROJECT_DIR$/build/1.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/2.bundle.js" afterPath="$PROJECT_DIR$/build/2.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/3.bundle.js" afterPath="$PROJECT_DIR$/build/3.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/4.bundle.js" afterPath="$PROJECT_DIR$/build/4.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/5.bundle.js" afterPath="$PROJECT_DIR$/build/5.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/bundle.js" afterPath="$PROJECT_DIR$/build/bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/player/main/main.vue" afterPath="$PROJECT_DIR$/src/pages/player/main/main.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/navigation/navigation.vue" afterPath="$PROJECT_DIR$/src/components/navigation/navigation.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/player/player.vue" afterPath="$PROJECT_DIR$/src/pages/player/player.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/home/recomment/recom.vue" afterPath="$PROJECT_DIR$/src/pages/home/recomment/recom.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/upload/upload.vue" afterPath="$PROJECT_DIR$/src/pages/upload/upload.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/modal/user-modal.vue" afterPath="$PROJECT_DIR$/src/components/modal/user-modal.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/video-js/video.vue" afterPath="$PROJECT_DIR$/src/components/video-js/video.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/works_list/worksList.vue" afterPath="$PROJECT_DIR$/src/components/works_list/worksList.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gaia.iws" />
@@ -88,11 +31,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="worksList.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="worksList.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/works_list/worksList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77483445">
-              <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/player/main/main.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25496688">
+              <caret line="181" column="21" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/video-js/video.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/upload/upload.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.333333">
+              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -122,8 +105,6 @@
         <option value="$PROJECT_DIR$/src/components/video-js/video.vue" />
         <option value="$PROJECT_DIR$/src/pages/home/recomment/recom.vue" />
         <option value="$PROJECT_DIR$/src/pages/upload/upload.vue" />
-        <option value="$PROJECT_DIR$/src/pages/player/main/main.vue" />
-        <option value="$PROJECT_DIR$/src/main.js" />
         <option value="$PROJECT_DIR$/src/static/less/profile.less" />
         <option value="$PROJECT_DIR$/src/pages/profile/profile.vue" />
         <option value="$PROJECT_DIR$/src/pages/player/player.vue" />
@@ -133,6 +114,8 @@
         <option value="$PROJECT_DIR$/src/pages/films/list/list.vue" />
         <option value="$PROJECT_DIR$/src/pages/profile/main/main.vue" />
         <option value="$PROJECT_DIR$/src/components/works_list/worksList.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/pages/player/main/main.vue" />
       </list>
     </option>
   </component>
@@ -351,6 +334,54 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -419,6 +450,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="works_list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gaia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="video-js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -811,14 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/video-js/video.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -851,30 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33280507">
-          <caret line="7" column="26274" selection-start-line="7" selection-start-column="26274" selection-end-line="7" selection-end-column="26274" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/player/main/main.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="101.333336">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/profile/main/main.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -903,14 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14900662">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/upload/upload.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="8" column="10" selection-start-line="5" selection-start-column="4" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -955,10 +968,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/upload/upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/works_list/worksList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77483445">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/video-js/video.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/player/main/main.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25496688">
+          <caret line="181" column="21" selection-start-line="181" selection-start-column="21" selection-end-line="181" selection-end-column="21" />
           <folding />
         </state>
       </provider>

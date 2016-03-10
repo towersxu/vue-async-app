@@ -26,13 +26,13 @@
   </div>
 </template>
 <script>
-  var videoJs = require('../video-js/video.vue');
   module.exports = {
     replace:true,
     data:function(){
       return {
         recoms:[],
         videoComponent:'',
+        videoJs:'',
         videoInstances:[],
         initVideo:false,
         isLoaded:false
@@ -47,14 +47,11 @@
       },1000);
     },
     ready:function(){
-      this.videoComponent = Vue.component('videoJs', videoJs);
-      var resource = this.$resource('/v/{id}');
-//      resource.get({id: 1}).then(function (response) {
-//        setTimeout(function(){
-//          console.log(1)
-//          this.$set('recoms', [{},{},{},{},{},{},{}])
-//        },1000);
-//      });
+      var self = this;
+        require.ensure(["../video-js/video.vue"], function (require) {
+          self.videoJs = require("../video-js/video.vue");
+          self.videoComponent = Vue.component('videoJs', self.videoJs);
+        });
     },
     detached:function(){
       console.log('detached...');
@@ -65,7 +62,7 @@
     methods:{
       'play':function(e,idx){
         if(!this.recoms[idx].video){
-          e.target.innerHTML = videoJs.template;
+          e.target.innerHTML = this.videoJs.template;
           var videoInstance = new this.videoComponent();
           videoInstance.initVideo({
             id:'vid1',
