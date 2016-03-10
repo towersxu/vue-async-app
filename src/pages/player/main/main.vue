@@ -181,6 +181,7 @@
     },
     ready:function(){
       this.$broadcast('play_video',{
+        autoplay:true,
         controlBar: {
           volumeMenuButton: {
             inline: false,

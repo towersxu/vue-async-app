@@ -3,8 +3,8 @@
     <div class="container">
       <div class="nav">
         <ul>
-          <li><a v-link=" 'home' ">作品池</a> </li>
-          <li><a v-link=" 'film' ">创作者</a></li>
+          <li><a v-link="{name:'film'}">作品池</a> </li>
+          <li><a>创作者</a></li>
           <li>素材池</li>
           <li>剧本</li>
           <li>学院</li>
@@ -14,7 +14,7 @@
         <i class="cloud sp i129"></i>
         <div class="upload animated" v-show="isOpUp" transition="flipInX">
           <span>上传作品</span>
-          <div class="btn-red"><a v-link=" 'upload' ">上传素材</a></div>
+          <div class="btn-red"><a v-link="{name:'upload'}">上传素材</a></div>
         </div>
       </div>
     </div>

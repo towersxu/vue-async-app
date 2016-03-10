@@ -34,7 +34,6 @@
     ready:function(){
       if (!this.asyncUploadModule) {
         var that = this;
-        var Vue = require('vue');
         Vue.component('uploadMain', function (resolve, reject) {
           require.ensure(["./main/main.vue"], function (require) {
             that.isLoading = false;

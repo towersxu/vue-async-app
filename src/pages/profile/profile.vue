@@ -3,7 +3,7 @@
     <gaia-header></gaia-header>
     <mask></mask>
     <navigation></navigation>
-    <play-main></play-main>
+    <profile-main></profile-main>
     <gaia-footer></gaia-footer>
   </div>
 </template>
@@ -12,10 +12,10 @@
   var gaiaHeader = require('../../components/header/gaia-header.vue');
   var mask = require('../../components/mask/mask.vue');
   var navigation = require('../../components/navigation/navigation.vue');
-  var playMain = require('./main/main.vue');
   var gaiaFooter = require('../../components/footer/footer.vue');
+  var profileMain = require('./main/main.vue');
   module.exports = {
-    name:'player',
+    name:'profile',
     replace:false,
     data:function(){
       return {
@@ -27,7 +27,7 @@
       mask:mask,
       navigation:navigation,
       gaiaFooter:gaiaFooter,
-      playMain:playMain
+      profileMain:profileMain
     },
     ready:function(){
     },
@@ -39,6 +39,9 @@
     events:{
       'app-mask-show':function(msg) {
         this.$broadcast('mask_show',msg);
+      },
+      'app-crop-show':function(msg) {
+        this.$broadcast('cropper_show',msg);
       }
     }
   };

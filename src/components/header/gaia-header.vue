@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="container">
-      <div class="logo sp i138"><a href="/"></a> </div>
+      <div class="logo sp i138"><a v-link="{name:'home'}"></a> </div>
       <p class="des">创作者交流社区</p>
       <div class="user">
         <span class="link reg" v-on:click="register">注册</span>

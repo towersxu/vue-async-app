@@ -511,7 +511,6 @@
             },
             method:'POST'
           }).then(function(res){
-            console.log(arguments);
             if(res.data && res.data.b===1){
               self.usernameValidated=true;
             }else{

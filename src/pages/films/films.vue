@@ -3,10 +3,7 @@
     <gaia-header></gaia-header>
     <mask></mask>
     <navigation></navigation>
-    <div v-bind:class="{'film-load':isLoading}" id="films">
-      <div class="loader" v-show="isLoading"></div>
-      <film-main></film-main>
-    </div>
+    <film-main></film-main>
     <gaia-footer></gaia-footer>
   </div>
 </template>
@@ -16,6 +13,7 @@
   var mask = require('../../components/mask/mask.vue');
   var navigation = require('../../components/navigation/navigation.vue');
   var gaiaFooter = require('../../components/footer/footer.vue');
+  var filmMain = require('./list/list.vue');
   module.exports = {
     name:'home',
     replace:false,
@@ -28,31 +26,10 @@
       gaiaHeader:gaiaHeader,
       mask:mask,
       navigation:navigation,
-      gaiaFooter:gaiaFooter
+      gaiaFooter:gaiaFooter,
+      filmMain:filmMain
     },
     ready:function(){
-      if (!this.asyncFilmModule) {
-        var that = this;
-        var Vue = require('vue');
-        Vue.component('filmMain', function (resolve, reject) {
-          require.ensure(["./list/list.vue"], function (require) {
-            that.isLoading = false;
-            resolve(require("./list/list.vue"));
-          });
-        });
-        that.asyncFilmModule = new Vue({
-          el: '#films',
-          data: function(){
-            return {};
-          },
-          events: {
-          }
-        });
-      } else {
-        console.log('this is films!');
-//        this.asyncModule.msg = msg;
-//        this.asyncModule.$emit('get_init');
-      }
     },
     methods:{
       triggerClose:function(){

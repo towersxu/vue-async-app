@@ -1,19 +1,15 @@
-import Vue from 'vue'
-
-import app from './app.vue'
-import film from './pages/films/films.vue'
-import home from './pages/home/home.vue'
-import upload from './pages/upload/upload.vue'
-import player from './pages/player/player.vue'
-import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
-
-import './static/less/style.less'
-import './static/less/animate.less'
-import './static/less/home.less'
-import './static/less/films.less'
-import './static/less/play.less'
-
+var app = require('./app.vue');
+var film= require('./pages/films/films.vue');
+var home = require('./pages/home/home.vue');
+var upload = require('./pages/upload/upload.vue');
+var VueResource = require('vue-resource');
+var VueRouter = require('vue-router');
+require('./static/less/style.less');
+require('./static/less/animate.less');
+require('./static/less/home.less');
+require('./static/less/films.less');
+require('./static/less/play.less');
+require('./static/less/profile.less');
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -37,13 +33,25 @@ router.map({
     name:'film',
     component:film
   },
-  'player':{
+  '/video/:videoId':{
     name:'player',
-    component:player
+    component:function(resolve){
+      require.ensure(['./pages/player/player.vue'], function(){
+        resolve(require("./pages/player/player.vue"));
+      });
+    }
   },
-  'upload':{
+  '/upload':{
     name:'upload',
     component:upload
+  },
+  '/profile':{
+    name:'profile',
+    component:function(resolve){
+      require.ensure(['./pages/profile/profile.vue'], function(){
+        resolve(require("./pages/profile/profile.vue"));
+      });
+    }
   }
 });
 
