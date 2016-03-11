@@ -53,17 +53,11 @@
           self.videoComponent = Vue.component('videoJs', self.videoJs);
         });
     },
-    detached:function(){
-      console.log('detached...');
-    },
-    destroyed:function(){
-      console.log('destroyed..........');
-    },
     methods:{
       /**
-       * 调用播放视频
+       * 创建video实例;将video模块插入需要播放位置;调用播放视频
        */
-      'play':function(e,idx){
+      play:function(e,idx){
         if(!this.recoms[idx].video){
           e.target.innerHTML = this.videoJs.template;
           var videoInstance = new this.videoComponent();
@@ -125,18 +119,20 @@
           this.recoms[idx].video = videoInstance;
         }
       },
-      'destroy':function(e,idx){
+      /**
+       * 删除video实例
+       */
+      destroy:function(e,idx){
         if(this.recoms[idx].video){
           this.recoms[idx].video.player.dispose();
           this.recoms[idx].video = null;
         }
       },
       /**
-       * 跳转播放页
+       * 跳转播放页;
        */
       goPlayer:function(index){
-        console.log(this);
-        this.recoms[index].video.player.dispose();
+        this.recoms[index].video.player.dispose();                //删除当前video实例;
         this.recoms[index].video = null;
         this.$router.go({name:'player',params:{videoId:index}})
       }
