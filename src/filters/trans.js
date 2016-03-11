@@ -26,3 +26,17 @@ Vue.filter('timeTrans', function (seconds){
   }
   return seconds.toFixed(0)+measures[idx]+res;
 });
+Vue.filter('timeTransNumber', function (seconds){
+  var ret,idx=0,res='';
+  if(typeof seconds !=='number'){
+    seconds = Number(seconds) || 0;
+  }
+  seconds = Math.ceil(seconds);
+  while(seconds > 59 && idx<2){
+    res = (seconds%60).toFixed(0)+':'+res;
+    idx=idx+1;
+    seconds = seconds/60;
+  }
+  ret=seconds.toFixed(0)+':'+res;
+  return ret.substr(0,ret.length-1);
+});

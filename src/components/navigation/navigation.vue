@@ -13,8 +13,8 @@
       <div class="upload-btn" v-on:click.stop="isOpUp=true">
         <i class="cloud sp i129"></i>
         <div class="upload animated" v-show="isOpUp" transition="flipInX">
-          <span>上传作品</span>
-          <div class="btn-red"><a v-link="{name:'upload'}">上传素材</a></div>
+          <span>上传素材</span>
+          <div class="btn-red"><a v-link="{name:'upload'}">上传作品</a></div>
         </div>
       </div>
     </div>
