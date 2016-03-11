@@ -179,8 +179,17 @@
     components:{
       videoJs:videoJs
     },
+    route:{
+      data: function () {
+        console.log('data........')
+      },
+      deactivate:function(){
+        console.log('deactivate........');
+      }
+    },
     ready:function(){
       this.$broadcast('play_video',{
+        autoplay:true,
         controlBar: {
           volumeMenuButton: {
             inline: false,
@@ -233,6 +242,9 @@
           }
         }
       });
+    },
+    destroyed:function(){
+      console.log('destroyed..........video');
     },
     methods:{
 

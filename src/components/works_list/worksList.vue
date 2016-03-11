@@ -60,6 +60,9 @@
       console.log('destroyed..........');
     },
     methods:{
+      /**
+       * 调用播放视频
+       */
       'play':function(e,idx){
         if(!this.recoms[idx].video){
           e.target.innerHTML = this.videoJs.template;
@@ -124,16 +127,8 @@
       },
       'destroy':function(e,idx){
         if(this.recoms[idx].video){
-//          console.log(this.videoInstance);
-
-//          console.log(this.videoInstance);
-//          console.log(e.target);
-//          var e = document.getElementById('vid1');
-//          e.parentNode.removeChild(e);
-//          console.log(this.videoInstance);
           this.recoms[idx].video.player.dispose();
           this.recoms[idx].video = null;
-//          this.recoms[idx].video.pause();
         }
       },
       /**
