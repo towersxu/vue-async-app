@@ -15,22 +15,19 @@
       </div>
       <div class="input">
         <span class="i-head">密码</span>
-        <input type="{{showPass}}"  placeholder="" ng-model="password"
-               v-on:focus="showComplexity=true" v-on:blur="showComplexity=false">
+        <input type="{{showPass}}"  placeholder="" v-model="regObj.password" v-bind:class="{'error':regObj.passwordError}"
+               v-on:focus="showComplexity=true" v-on:blur="checkPassword($event)" v-on:keyup="validatePassword()">
         <i class="block sp i32 eye" v-bind:class="{'i33':showPass==='text'}" v-on:click.stop="showPassToggle()"></i>
-        <span class="status sp i75 suc"></span>
+        <span class="status sp i75 suc" v-show="regObj.passwordSecurity"></span>
       </div>
       <div class="input animated fix" v-show="showComplexity" transition="expand-pass">
         <p class="tips">6~20位数字或字母，区分大小写</p>
-
         <div class="pass-complexity">
           <span class="tip">密码强度：</span>
-
           <div class="total-process">
             <i class="inline-block sp i20"></i>
-
             <div class="process">
-              <div class="now"></div>
+              <div class="now" v-bind:style="{width:(regObj.passwordLevel+'px')}"></div>
             </div>
             <i class="inline-block sp i21"></i>
           </div>
@@ -423,8 +420,12 @@
           username:'',
           usernameTip:'',
           usernameError:false,      //输入框验证错误
-          usernameValidated:false
+          usernameValidated:false,
+          password:'',
+          passwordSecurity:false,
+          passwordLevel:0
         },
+        choseRegion:false,     //选择手机号地区
         isLog: false,
         isReg: false,
         showComplexity:false,  //密码复杂度
@@ -537,6 +538,28 @@
           this.regObj.username='';
           this.regObj.usernameTip = '用户名不能为空';
           this.regObj.usernameError = true;
+        }
+      },
+      /**
+       * 检查密码长度,对应密码强度
+       */
+      validatePassword:function(){
+        //密码大于6位,显示图标
+        this.regObj.passwordSecurity=this.regObj.password.length>6;
+        //密码长度和密码强度想对应
+        if(this.regObj.password.length>0 && this.regObj.password.length<21){
+          this.regObj.passwordLevel=this.regObj.password.length*10;
+        }
+      },
+      /**
+       * 密码输入完成后检查密码
+       */
+      checkPassword:function(e){
+        if(this.regObj.password.length<6){
+          e.target.focus();
+          this.regObj.passwordSecurity=false;
+        }else{
+          this.showComplexity=false;
         }
       }
     }

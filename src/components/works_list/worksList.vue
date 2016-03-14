@@ -1,10 +1,10 @@
 <template>
   <div class="items-list">
     <div class="item" v-for="video in videoList">
-      <div class="img-wrap">
-        <img src="./A3.jpg">
+      <div class="img-wrap"  v-on:mouseenter="play($event,$index)" v-on:mouseleave="destroy($event,$index)" v-on:click="goPlayer($index)">
+        <img src="./A3.jpg" class="cover-img">
         <div class="labels"><i class="sp i133"></i><i class="sp i134"></i></div>
-        <div class="video-container" v-on:mouseenter="play($event,$index)" v-on:mouseleave="destroy($event,$index)" v-on:click="goPlayer($index)">
+        <div class="video-container">
         </div>
       </div>
       <div class="item-content">
@@ -65,7 +65,8 @@
        */
       play:function(e,idx){
         if(!this.videoList[idx].video){
-          e.target.innerHTML = this.videoJs.template;
+          $(e.target).find('.video-container').append(this.videoJs.template);
+//          e.target.innerHTML = this.videoJs.template;
           var videoInstance = new this.videoComponent();
           videoInstance.initVideo({
             id:'vid1',
