@@ -25,6 +25,9 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       "Vue":"vue"
+    }),
+    new webpack.ProvidePlugin({
+      "$":"jquery"
     })
   ],
   devServer:{

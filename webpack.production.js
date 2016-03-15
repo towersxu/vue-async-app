@@ -28,6 +28,9 @@ module.exports = {
     new webpack.ProvidePlugin({
       "Vue":"vue"
     }),
+    new webpack.ProvidePlugin({
+      "$":"jquery"
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
