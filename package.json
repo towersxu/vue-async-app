@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --quiet --port 3001 --config webpack.config.js",
-    "build-server": "rm -rf build/* && webpack --progress --hide-modules --config webpack.production.js && webpack-dev-server --inline --hot --port 3002 --config webpack.production.js",
-    "build": "rm -rf build/* && webpack --progress --hide-modules --config webpack.production.js"
+    "dev": "webpack-dev-server --inline --hot --quiet --port 3001 --config webpack.demo.js"
   },
   "dependencies": {
     "vue": "^1.0.8"
